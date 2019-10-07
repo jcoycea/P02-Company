@@ -1,0 +1,35 @@
+/*
+using code from flexbox example in Lecture by Helmine Serban, retrieved from canvas.sfu.ca
+and referencing https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+*, *::after, *::before{
+  box-sizing: border-box;
+}
+
+.main_nav, .container, .palette_container  {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+}
+
+.product_grid_row, .product_options,
+.pay_method, .checkout_product {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+}
+
+.order-line {
+  display: flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -ms-justify-content: space-between;
+}
