@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+.main_journal{
+  display: grid;
+  grid-gap: 10px;
+	grid-template-columns: 50% 50%;
+  border:1px black;
+}
+
+
+
+.box {
+  border:1px solid black;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box-text{
+  width:auto;
+  height:80erm;
+
+}
+
+.image-link-container{
+  width:auto;
+
+}
+
+.box-text p{
+  font-size:1rem;
+}
+.box-text h5{
+  margin:10px 0 10px 00;
+
+}
