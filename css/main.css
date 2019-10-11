@@ -6,8 +6,10 @@ div {
 
 body {
   font-family: "Europa", sans-serif;
+  /*
   margin: 2rem;
   padding: 2rem;
+  */
 	font-size: 0.85rem;
 }
 
@@ -121,19 +123,21 @@ input[type="text"]:focus {
 }
 
 .main_nav {
-  text-align: center;
   width: 100%;
+  overflow: hidden;
 }
 
 .main_nav_item {
   display: inline-block;
-  padding: 1rem 3rem 1rem 3rem;
+  padding: 0.8rem 4rem;
   transition: color 0.5s ease-out;
   flex: 1;
   vertical-align: top;
 
   text-transform: uppercase;
   text-decoration: none;
+  text-align: center;
+  float: left;
   letter-spacing: 0.075rem;
   font-size: 0.7rem;
   font-family: "Muli", sans-serif;
@@ -274,11 +278,14 @@ input[type="radio"]:hover:after {
   font-size: 1.2rem;
 }
 
-.container {
+/* this a container that holds the page body content */
+.content_container {
   width: 75%;
-  margin: 0 auto;
+  /*margin: 0 auto;*/
   flex-grow: 1;
 
+  margin: 1.5rem;
+  padding: 1.5rem;
 }
 
 /***** COLOUR PALETTE *****/
@@ -354,7 +361,6 @@ input[type="radio"]:hover:after {
   padding: 0.5rem;
   background: #FFF;
   border-bottom: 1px solid #EEE;
-  margin-bottom: 0.5rem;
 }
 
 .desktop_nav {
