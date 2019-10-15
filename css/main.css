@@ -647,13 +647,13 @@ select {
 
 /***** CHECKOUT CART *****/
 
-table {
+#view_table table {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-th {
+#view_table th {
   font-size: 0.7rem;
   font-weight: bold;
   text-transform: uppercase;
