@@ -113,8 +113,6 @@ input[type="text"]:focus {
   margin-bottom: 3rem;
 }
 
-
-
 /***** PAGE NAVIGATION *****/
 
 .current_link {
@@ -146,8 +144,6 @@ input[type="text"]:focus {
 .main_nav_item:active, .main_nav_item:hover, .main_nav_item:focus {
   color: #FFB523;
 }
-
-
 
 /***** INTERACTIVE ELEMENTS *****/
 
@@ -290,8 +286,6 @@ input[type="radio"]:hover:after {
   padding: 1.5rem;
 }
 
-
-
 /***** COLOUR PALETTE *****/
 
 .palette_container .color_title {
@@ -349,8 +343,6 @@ input[type="radio"]:hover:after {
   vertical-align: middle;
 }
 
-
-
 /***** OLDERBROTHER NAVIGATION *****/
 
 #logo-wordmark {
@@ -382,8 +374,6 @@ input[type="radio"]:hover:after {
 .mobile_nav {
   display: block;
 }
-
-
 
 /***** PRODUCT PAGES - MULTIPLE *****/
 
@@ -497,8 +487,6 @@ input[type="radio"]:hover:after {
   border: 1px solid #3A3C4E;
   transition: 0.5s ease-out;
 }
-
-
 
 /***** PAYMENT FORM *****/
 
@@ -643,8 +631,6 @@ select {
   border: 1px solid darkgray;
 }
 
-
-
 /***** CHECKOUT CART *****/
 
 #view_table table {
@@ -723,7 +709,7 @@ td {
 
 /***** HOMEPAGE *****/
 
-.hero-banner {
+.hero-banner-img {
   background-image: url(http://www.sfu.ca/~jaquino/homepage-banner1.png);
   /* 100vw/vh = 100% of browser width and height */
   width: 100vw;
@@ -734,13 +720,16 @@ td {
   align-items: center;
   text-align: center;
 
-/***** SHOP - MULTIPLE PRODUCTS *****/
+  background-repeat: no-repeat;
+}
 
-.hero-banner h1 {
+.hero-banner-img h1 {
   font-size: 2.25rem;
   margin: 1.5rem;
   color: white;
 }
+
+/***** SHOP - MULTIPLE PRODUCTS *****/
 
 .content_container #featured_products {
   width: 85%;
@@ -770,8 +759,6 @@ td {
 #brand_description .secondary-btn {
   margin-top: 2rem;
 }
-
-
 
 /***** JOURNAL *****/
 
