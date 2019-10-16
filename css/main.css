@@ -762,6 +762,84 @@ td {
 
 /***** JOURNAL *****/
 
+*{
+  box-sizing: border-box;
+}
+
+.main_journal{
+  display: grid;
+  grid-gap: 6px;
+	grid-template-columns:33% 30% 30%;
+}
+
+
+
+.box {
+  padding: 20px;
+  font-size: 150%;
+}
+
+.box-text{
+  width:auto;
+  height:80erm;
+
+}
+
+.image-link-container{
+  width:auto;
+
+}
+
+.box-text p{
+  font-size:1rem;
+}
+.box-text h5{
+  margin:10px 0 10px 00;
+
+}
+
+#journal-items{
+  display: inline-block;
+  background: url("img/01.jpg") no-repeat center;;
+  background-size:cover;
+  height: 500px;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  z-index:-2;
+}
+
+#article{
+  display: grid;
+  grid-gap: 40px;
+	grid-template-columns:10% 30% 30% 20%;
+  margin: 20px;
+
+}
+.article-image-item img{
+  margin-top: 100px;
+
+
+}
+
+#square {
+ width: 320px;
+height: 460px;
+background: #A9AD9D;
+}
+
+.ariticle-title p{
+  margin-top: 80px;
+}
+
+.ariticle-title hr{
+  margin-top: 150px;
+}
+.article-image img{
+
+  margin-bottom: 50px;
+
+}
 
 
 /***** PROCESS / ABOUT PAGE *****/
