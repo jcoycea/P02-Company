@@ -785,9 +785,18 @@ td {
 
 }
 
+.items-text{
+  text-align: center;
+}
+.items-text h1{
+  font-size: 15rem;
+  padding: 5rem 0 0 15rem;
+  color:
+
+}
+
 .image-link-container{
   width:auto;
-
 }
 
 .box-text p{
@@ -798,15 +807,23 @@ td {
 
 }
 
-#journal-items{
-  display: inline-block;
-  background: url("img/01.jpg") no-repeat center;;
-  background-size:cover;
-  height: 500px;
-  background-attachment: fixed;
+.items-text{
+  background-image: url(http://www.sfu.ca/~yanhongw/01.jpg);
+  width: 100vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.items-text img{
   position: relative;
-  width: 100%;
-  z-index:-2;
+  top: 100px;
+  left: 250px;
+  width: 30%;
+
 }
 
 #article{
@@ -818,8 +835,6 @@ td {
 }
 .article-image-item img{
   margin-top: 100px;
-
-
 }
 
 #square {
@@ -836,11 +851,53 @@ background: #A9AD9D;
   margin-top: 150px;
 }
 .article-image img{
-
   margin-bottom: 50px;
 
 }
 
+footer{
+  background-color:#FAFAF9;
+  text-align: center;
+  height: 140px;
+}
+#footer-items{
+  display: grid;
+  grid-gap: 10px;
+	grid-template-columns:10% 60% 30%;
+}
+
+.footer-items-nave nav{
+  display:inline-block;
+  margin-top: 20px;
+}
+
+.footer-items-logo img{
+  width:40px;
+  height: 40px;
+  margin: 20px 0 20px 0;
+}
+
+.myButton {
+	background:#3A3C4E;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:13px;
+	font-weight:bold;
+	padding:6px 19px;
+}
+.myButton:hover {
+	background:#FFB523;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.footers-copyright p{
+  margin-block-end:0px;
+  margin-block-start:0;
+}
 
 /***** PROCESS / ABOUT PAGE *****/
 
