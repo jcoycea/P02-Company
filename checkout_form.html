@@ -52,7 +52,7 @@
       <section id="payment_order_form">
 
         <div id="order_summary">
-          <!-- <div class="block"> -->
+          <div class="block">
             <h4 id="order-summary-title">Order Summary</h4>
 
             <div class="order-line">
@@ -74,34 +74,12 @@
               <h4 id="order-total-title">Order Total</h4>
               <h4 id="order-total-price">$722.40</h4>
             </div>
-<!--
-            <div class="shipping-address seperator-line">
-              <div class="order-line">
-                <h4 class="summary-left">Shipping Address</h4>
-                <p class="summary-right"><a href="#" class="edit-link">Edit</a></p>
-              </div>
-              <p class="order-text">
-                Jenna Appleseed<br>
-                2455 W 5th Ave<br>
-                Vancouver, BC V6K 1S7<br>
-                Canada, 6041234567
-              </p>
-            </div>
 
-            <div class="shipping-method seperator-line">
-              <div class="order-line">
-                <h4 class="summary-left">Shipping Method</h4>
-                <p class="summary-right"><a href="#" class="edit-link">Edit</a></p>
-              </div>
-              <p class="order-text">
-                Standard Free Shipping<br>
-                Delivers in 7-10 Business Days
-              </p>
-            </div>
--->
-          <!-- </div> -->
+          </div>
         </div>
+<!--
 
+-->
         <div id="payment_form">
           <div class="block">
 
@@ -120,17 +98,17 @@
 
               <div class="shipping_apt">
                 <label for="ship_apt" class="text-label">Apt/Suite (Optional)</label>
-                <input type="text" id="ship_apt" class="input-box"><br>
+                <input type="text" id="ship_apt" class="input-box">
               </div><br>
 
               <div class="shipping_city_prov">
                 <div class="shipping_city">
                   <label for="ship_city" class="text-label">City</label>
-                  <input type="text" id="ship_city" class="input-box"><br>
+                  <input type="text" id="ship_city" class="input-box">
                 </div><br>
 
-                <div class="ship_province">
-                  <label class="text-label">Province</label><br>
+                <div class="shipping_province">
+                  <label for="province_option" class="text-label">Province</label><br>
 
                   <div class="form_select">
                     <select name="province" id="province_option"><br>
@@ -147,21 +125,21 @@
                     </select>
                   </div>
                 </div>
-              </div>
+              </div><br>
 
               <div class="shipping_postal">
                 <label for="ship_postal" class="text-label">Postal Code</label>
-                <input type="text" id="ship_postal" class="input-box"><br>
+                <input type="text" id="ship_postal" class="input-box">
               </div><br>
 
               <div class="shipping_country">
                 <label for="ship_country" class="text-label">Country</label>
-                <input type="text" id="ship_country" class="input-box" placeholder="Canada"><br>
+                <input type="text" id="ship_country" class="input-box" placeholder="Canada">
               </div><br>
 
               <div class="shipping_phone">
                 <label for="ship_phone" class="text-label">Phone Number</label>
-                <input type="text" id="ship_phone" class="input-box"><br>
+                <input type="text" id="ship_phone" class="input-box">
               </div><br>
 
             </div>
@@ -169,6 +147,7 @@
             <div class="seperator-line">
               <h4 id="card-info-title">Payment Method</h4>
             </div>
+
             <div class="pay_method">
               <div class="method1">
                 <input type="radio" value="radio_btn" name="method">
@@ -197,7 +176,7 @@
             </div><br>
 
             <div class="card_expiry">
-              <label class="text-label">Expiry Date</label><br>
+              <label for="expiry_month" class="text-label">Expiry Date</label><br>
 
               <div class="form_select">
                 <select name="month" id="expiry_month"><br>
