@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title class="page_title">Olderbrother | Style Guide</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/grids.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <header class="content_container">
+      <h1>Olderbrother Style Guide Template</h1>
+      <p>This styleguide is a resource to provide a common language around Olderbrother's design patterns.</p>
+
+      <nav class="main_nav">
+        <a href="#" class="main_nav_item"><span class="current_link">Style Guide</span></a>
+        <a href="product-page.html" class="main_nav_item">Products</a>
+        <a href="checkout-cart.html" class="main_nav_item">Checkout</a>
+        <a href="payment-form.html" class="main_nav_item">Payment</a>
+      </nav>
+    </header>
+
+
+
+    <!-- INTERACTIVE ELEMENTS SECTION -->
+    <div class="content_container">
+      <section id="interactive_elements">
+        <h2 class="main_heading">Interactive Elements</h2>
+
+        <section class="element">
+
+          <!-- In-Text Link -->
+          <h3 class="sub_heading">In-text link</h3>
+          <p>This is an inline text <a href="#" class="intext-link">link</a>.</p>
+
+          <h4>CSS selector:</h4>
+          <p>.intext-link</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;p&gt;This is an inline text &lt;a href="#" class="intext-link"&gt;link&lt;/a&gt;.&lt;/p&gt;</code>
+
+        </section>
+
+        <section class="element">
+
+        <!-- Default Navigation Button -->
+          <h3 class="sub_heading">Navigation Link</h3>
+          <a class="main_nav_item" href="#">Default Button</a><br>
+
+          <h4>CSS selector:</h4>
+          <p>.main_nav_item</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="main_nav_item"&gt;Default Button&lt;/a&gt;</code>
+
+        </section>
+
+
+        <section class="element">
+
+          <!-- Submit & Reset Buttons -->
+          <h3 class="sub_heading">Submit/Reset Buttons</h3>
+          <a href="#" class="primary-btn">Submit</a>
+          <a href="#" class="secondary-btn">Reset</a>
+
+          <h4>CSS selector:</h4>
+          <p>
+            .primary-btn<br>
+            .secondary-btn
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;a href="#" class="primary-btn"&gt;Submit&lt;/a&gt;<br>
+            &lt;a href="#" class="secondary-btn"&gt;Reset&lt;/a&gt;
+          </code>
+
+        </section>
+
+
+        <section class="element">
+
+          <!-- Text Input Field w/ Label -->
+          <h3 class="sub_heading">Text Input Field with Label</h3>
+
+          <label for="input-name" class="text-label">Email Address</label><br>
+          <input type="text" id="input-name">
+
+          <h4>CSS selector:</h4>
+          <p>
+            .text-label<br>
+            input[type="text"]
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;label for="input-name" class="text-label"&gt;Email Address&lt;/label&gt;<br>
+            &lt;input type="text" id="input-name"&gt;
+          </code>
+
+        </section>
+
+
+        <section class="element">
+
+          <!-- Radio Buttons -->
+          <h3 class="sub_heading">Radio Button with Label</h3>
+
+          <label class="text-label">Select fabric colour option:</label><br>
+          <div class="radio-color-swatch">
+            <input type="radio" name="color" value="orange"/>
+            <label for="orange">Turmeric</label><br>
+
+            <input type="radio" name="color" value="gold"/>
+            <label for="gold">Saffron</label><br>
+
+            <input type="radio" name="color" value="blue"/>
+            <label for="blue">Indigo</label>
+          </div>
+
+          <h4>CSS selector:</h4>
+          <p>
+            .radio-color-swatch<br>
+            input[type="radio"]
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="radio-color-swatch"&gt;<br>
+            &nbsp;&lt;input type="radio" name="color" value="orange"/&gt;<br>
+            &nbsp;&lt;label for="orange">Turmeric&lt;/label&gt;<br>
+            &nbsp;&lt;input type="radio" name="color" value="gold"/&gt;<br>
+            &nbsp;&lt;label for="gold">Saffron&lt;/label&gt;<br>
+            &nbsp;&lt;input type="radio" name="color" value="blue"/&gt;<br>
+            &nbsp;&lt;label for="blue">Indigo&lt;/label&gt;<br>
+            &lt;/div&gt;
+          </code>
+
+        </section>
+
+
+        <section class="element">
+
+          <!-- Linked Image (for a Journal Page) -->
+          <h3 class="sub_heading">Image as a Link</h3>
+          <div class="image-link-container">
+            <a href="#"><img src="img/saffron-dye.jpg" class="img-link" alt="White spoon holding dried saffron and golden-coloured fabric in the background."></a>
+            <div class="img-hover-box">
+              <div class="img-hover-text">Olderbrother Featured in Bon Appétit</div>
+            </div>
+          </div>
+
+          <h4>CSS selector:</h4>
+          <p>
+            .image-link-container<br>
+            .img-link<br>
+            .img-hover-box<br>
+            .img-hover-text
+          </p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;div class="image-link-container"&gt;<br>
+            &nbsp;&lt;a href="#"&gt;&lt;img src="img/saffron_dye.jpg" class="img-link" alt="White spoon holding dried saffron and golden-coloured fabric in the background."&gt;&lt;/a&gt;<br>
+            &nbsp;&lt;div class="img-hover-box"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="img-hover-text"&gt;Olderbrother Featured in Bon Appétit&lt;/div&gt;<br>
+            &nbsp;&lt;/div&gt;<br>
+            &lt;/div&gt;
+          </code>
+
+        </section>
+
+
+      </section>
+    </div>
+    <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- TYPOGRPAHY SECTION // -->
+    <div class="content_container">
+      <section id="typography">
+        <h2 class="main_heading">Typography</h2>
+
+        <section class="element">
+
+          <!-- 4 Levels of Headings -->
+          <h3 class="sub_heading">Headings</h3>
+          <h1>This is Heading 1</h1>
+          <h2>This is Heading 2</h2>
+          <h3>This is Heading 3</h3>
+          <h4>This is Heading 4</h4>
+
+          <h4>CSS selector:</h4>
+          <p>h1, h2, h3, h4</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;h1&gt;This is Heading 1&lt;/h1&gt;<br>
+            &lt;h2&gt;This is Heading 2&lt;/h2&gt;<br>
+            &lt;h3&gt;This is Heading 3&lt;/h3&gt;<br>
+            &lt;h4&gt;This is Heading 4&lt;/h4&gt;
+          </code>
+
+        </section>
+
+        <section class="element">
+
+          <!-- Paragraph Text -->
+          <h3 class="sub_heading">Paragraphs</h3>
+          <p>We are at the forefront of the slow fashion revolution. Analogous to the recently shifted food paradigm, we insist on the most premium and transparent methods of garment creation. We employ a hybrid of artisan-care, environment-sensitivity and local machine-power. By incorporating eco-friendly textiles, natural dyeing and American manufacturing, each Olderbrother garment is subtly unique. At the end of the garments’ lifetime, it can be buried in your backyard.</p>
+
+          <h4>CSS selector:</h4>
+          <p>p</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;p&gt;We are at the forefront of the slow fashion revolution. Analogous to the recently shifted food paradigm, we insist on the most premium and transparent methods of garment creation. We employ a hybrid of artisan-care, environment-sensitivity and local machine-power. By incorporating eco-friendly textiles, natural dyeing and American manufacturing, each Olderbrother garment is subtly unique. At the end of the garments’ lifetime, it can be buried in your backyard.&lt;/p&gt;
+          </code>
+
+        </section>
+
+        <section class="element">
+
+          <!-- Numbered List -->
+          <h3 class="sub_heading">Numbered Lists</h3>
+          <h5>Our Natural Dyes:</h5>
+          <ol>
+            <li>Indigo</li>
+            <li>Madder Root</li>
+            <li>Tannins</li>
+          </ol>
+
+          <h4>CSS selector:</h4>
+          <p>ol, li</p>
+
+          <h4>Sample code:</h4>
+          <code>
+            &lt;ol&gt;<br>
+            &nbsp;&lt;li&gt;Indigo&lt;/li&gt;<br>
+            &nbsp;&lt;li&gt;Madder Root&lt;/li&gt;<br>
+            &nbsp;&lt;li&gt;Tannins&lt;/li&gt;<br>
+            &lt;/ol&gt;
+          </code>
+
+        </section>
+
+      </section>
+    </div>
+    <!-- // TYPOGRAPHY SECTION -->
+
+
+
+    <!-- BRANDING SECTION // -->
+    <div class="content_container">
+      <section id="branding">
+        <h2 class="main_heading">Branding</h2>
+
+        <section class="element">
+
+          <!-- About the Brand -->
+          <h3 class="sub_heading">Branding Ideas</h3>
+
+          <h4>What does the company do, or offer?</h4>
+          <p>Olderbrother makes universal garments, equally tailored to fit men, women and people.</p>
+
+          <h4>Who is the company to potential customers?</h4>
+          <p>Olderbrother is a playful, eco-sustainable, naturally dyed, gender-neutral contemporary collection from Portland for the slow fashion revolution.</p>
+
+          <h4>Why might this company entice someone to purchase a product or service?</h4>
+          <p>They construct their whimsical unisex clothes from sustainably harvested fabrics like organic Japanese cotton and use vivid dyes made from almost exclusively edible pigments. They draw inspiration from ingredients that are animating the wellness world at that particular moment—fiery-orange turmeric, golden saffron, the muted earth tones of healing mushrooms.</p>
+        </section>
+
+        <section class="element">
+
+          <!-- Type Specimen & Font Usage -->
+          <h3 class="sub_heading">Fonts</h3>
+            <h1 class="europa_specimen">Europa is the brand typeface.</h1>
+            <h5>Used for headings and body text.</h5>
+            <p>"Europa is a geometric sans-serif typeface designed by Swiss designer Fabian Leuenberger and released through EuropaType in 2011. The design is unusual in that it has humanist influences in addition to the geometric influences—Leuenberger claims the two main influences for Europa were Futura and Gill Sans." – <a href="https://www.typewolf.com/site-of-the-day/fonts/europa" target="_blank">Typewolf</a></p>
+
+            <h1 class="muli_specimen">Muli is the supporting font.</h1>
+            <h5>Used for navigation and user interface elements.</h5>
+            <p>"Muli is a free, open-source sans-serif typeface designed by the prolific Vernon Adams, creator of numerous other open-source fonts available on Google Fonts." – <a href="https://www.typewolf.com/site-of-the-day/fonts/muli" target="_blank">Typewolf</a></p>
+
+          <h3 class="sub_heading">Colour Palette</h3>
+
+          <!-- Colour Palette & Usage -->
+          <h5>Used as branded accent colours.</h5>
+          <div class="palette_container">
+
+            <div id="swatch1">
+              <h4 class="color_title">#FFB523</h4>
+            </div>
+
+            <div id="swatch2">
+              <h4 class="color_title">#FAFAF9</h4>
+            </div>
+
+            <div id="swatch3">
+              <h4 class="color_title">#F5F5F2</h4>
+            </div>
+
+            <div id="swatch4">
+              <h4 class="color_title">#A9AD9D</h4>
+            </div>
+
+          </div>
+
+          <h5>Used for subtle background colours, text, and interactive elements.</h5>
+          <div class="palette_container">
+
+            <div id="swatch5">
+              <h4 class="color_title">#F9F7F2</h4>
+            </div>
+
+            <div id="swatch6">
+              <h4 class="color_title">#FAFAF9</h4>
+            </div>
+
+            <div id="swatch7">
+              <h4 class="color_title">#3A3C4E</h4>
+            </div>
+
+            <div id="swatch8">
+              <h4 class="color_title">#000000</h4>
+            </div>
+          </div>
+
+          <h3 class="sub_heading">Art Direction and Potential Imagery</h3>
+
+          <!-- Imagery that represent the Brand -->
+          <div class="container">
+            <div class="block brand-imagery">
+              <img src="img/imagery01.jpg">
+              <img src="img/imagery02.jpg">
+              <img src="img/imagery03.jpg">
+              <img src="img/imagery05.jpg">
+              <img src="img/imagery04.jpg">
+              <img src="img/imagery06.jpg">
+            </div>
+          </div>
+
+        </section>
+      </section>
+    </div>
+    <!-- // BRANDING SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <div class="content_container">
+      <section id="combined_elements">
+        <h2 class="main_heading">Combined Elements</h2>
+
+        <section class="element">
+
+          <h3 class="sub_heading">Main Navigation</h3>
+
+          <div id="global_nav">
+
+            <!-- Desktop Navigation -->
+            <div class="desktop_nav">
+              <nav class="main_nav">
+                <a href="home.html" id="logo-wordmark" class="main_nav_item">
+                  <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
+                </a>
+                <a href="shop.html" class="main_nav_item">Shop</a>
+                <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
+                <a href="about.html" class="main_nav_item">About</a>
+                <a href="journal.html" class="main_nav_item">Journal</a>
+              </nav>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile_nav">
+              <nav class="main_nav">
+                <a href="home.html" id="logo-icon" class="main_nav_item">
+                  <img src="img/olderbrother-icon.png" alt="Olderbrother Logo Icon">
+                </a>
+                <a href="shop.html" class="main_nav_item">Shop</a>
+                <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
+                <a href="about.html" class="main_nav_item">About</a>
+                <a href="journal.html" class="main_nav_item">Journal</a>
+              </nav>
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+    </div>
+    <!-- // COMBINED ELEMENTS SECTION -->
+
+
+    <div class="content_container">
+      <section id="citations">
+        <h2 class="main_heading">Citations</h2>
+
+        <ul>
+          <li>Adams, V. (n.d.). <strong>Muli [Font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Muli">fonts.google.com/specimen/Muli</a>.</li>
+          <li>Bologna, J. (2014, September 26). <strong>Flexbox Cheatsheet Cheatsheet [Website Article].</strong> Retrieved from <a href="https://jonibologna.com/blog/flexbox-cheatsheet">jonibologna.com/blog/flexbox-cheatsheet</a>.</li>
+          <li>Bradley, S. (2011, July 14). <strong>6 Methods For Vertical Centering With CSS [Web Article].</strong> Retrieved from <a href="https://vanseodesign.com/css/vertical-centering/">vanseodesign.com/css/vertical-centering/</a>.</li>
+          <li>Bredthauer, M. (2014, June 1). <strong>How to make my logo resize with the browser page [Community Forum].</strong> Retrieved from <a href="https://teamtreehouse.com/community/how-to-make-my-logo-resize-with-the-browser-page">teamtreehouse.com/community/how-to-make-my-logo-resize-with-the-browser-page</a>.</li>
+          <li>Coyier, C. (2018, December 31). <strong>Styling a Select Like It’s 2019 [Web Article].</strong> Retrieved from <a href="https://css-tricks.com/styling-a-select-like-its-2019/">css-tricks.com/styling-a-select-like-its-2019/</a>.</li>
+          <li>
+            Chelsea Burcz(2015, June 25). <strong>OLDERBROTHER: ORGANICS AT PLAY[Digital Image]. </strong> Retrieved from <a href="https://pilgrimsurfsupply.com/blogs/news/82881028-olderbrother-organics-at-play"></a>
+            https://pilgrimsurfsupply.com/blogs/news/82881028-olderbrother-organics-at-play
+          </li>
+          <li>
+            Eden Dawn(2015m, Oct.19). <strong>Bobby Bonaparte on Gender-Neutral Clothing and Keeping Fashion Local[Digital Image]. </strong> Retrieved from <a href="https://www.pdxmonthly.com/articles/2015/10/19/is-gender-neutral-clothing-the-future-of-portland-style"></a>
+            https://www.pdxmonthly.com/articles/2015/10/19/is-gender-neutral-clothing-the-future-of-portland-style
+          </li>
+          <li>LePage, P. (n.d.). <strong>Responsive Web Design Basics [Web Article].</strong> Retrieved from <a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive#set-the-viewport">developers.google.com/web/fundamentals/design-and-ux/responsive#set-the-viewport</a>.</li>
+          <li>Leuenberger, F. (n.d.). <strong>Europa [Font].</strong> Retrieved from <a href="https://fonts.adobe.com/fonts/europa#fonts-section">https://fonts.adobe.com/fonts/europa#fonts-section</a>.</li>
+          <li>Mejia, L. (2016, January 15). <strong>Designing A Product Page Layout with Flexbox.</strong> Retrieved from <a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox">css-tricks.com/designing-a-product-page-layout-with-flexbox/</a>.</li>
+          <li>Serban, H. (2018). <strong>P01 - Style Guide Template [HTML Template].</strong> Retrieved from <a href="https://canvas.sfu.ca">canvas.sfu.ca</a>.</li>
+          <li>The Noun Project. (n.d.). <strong>Arrow Down [Icon].</strong> Retrieved from <a href="https://thenounproject.com/search/?q=down%20arrow&i=770646">thenounproject.com/search/?q=down%20arrow&i=770646</a>.</li>
+          <li>(2013, April 8). <strong>A Complete Guide to Flexbox [Web Article].</strong> Retrieved from <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com/snippets/css/a-guide-to-flexbox/</a>.</li>
+          <li>(n.d.). <strong>How TO - Image Hover Overlay [Website Article].</strong> Retrieved from <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">www.w3schools.com/howto/howto_css_image_overlay.asp</a>.</li>
+          <li>(2015). <strong>CSS / HTML Navigation and Logo on same line [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line">https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line</a>.</li>
+          <li>(2013). <strong>CSS: Left, Center, & Right Align Text on Same Line [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/13694062/css-left-center-right-align-text-on-same-line">stackoverflow.com/questions/13694062/css-left-center-right-align-text-on-same-line</a>.</li>
+          <li>(2010). <strong>How do I change the color of radio buttons? [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons">stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons</a>.</li>
+          <li>(n.d.). <strong>How to change image on hover with CSS [Web Article].</strong> Retrieved from <a href="https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php">www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php</a>.</li>
+          <li>(2011). <strong>Styling Form with Label above Inputs [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs">stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs</a>.</li>
+  <br>
+          <li><strong>ALL Olderbrother Images [Digital Image].</strong> Retrieved from <a href="https://olderbrother.us">olderbrother.us</a>.</li>
+        </ul>
+
+      </section>
+    </div>
+
+  </body>
+</html>

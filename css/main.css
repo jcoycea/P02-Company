@@ -102,12 +102,13 @@ input[type="text"]:focus {
   margin-top: 3rem;
 }
 
-.element .sub_heading {
+.sub_heading {
   padding-top: 1.2rem;
   margin-bottom: 1rem;
+  text-align: left;
 }
 
-.content_container #individual_product, .container #checkout_cart, .content_container #payment_order_form {
+.content_container #individual_product, .content_container #checkout_cart, .content_container #payment_order_form {
   width: 100%;
 }
 
@@ -308,7 +309,7 @@ input[type="radio"]:hover:after {
 }
 
 #swatch3 {
-  background-color: #E2DBCC;
+  background-color: #F5F5F2;
 }
 
 #swatch4 {
@@ -337,7 +338,8 @@ input[type="radio"]:hover:after {
 
 .brand-imagery img {
   margin: 0.5rem;
-  width: 30%;
+  width: 70%;
+  display: inline-block;
   vertical-align: middle;
 }
 
@@ -534,6 +536,45 @@ input[type="radio"]:hover:after {
   background-color: #3A3C4E;
   border: 1px solid #3A3C4E;
   transition: 0.5s ease-out;
+}
+
+#ratings_reviews {
+  border-top: 1px solid #EEE;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#ratings_reviews .block {
+  width: 70%;
+}
+
+#write_review {
+  width: 30%;
+  margin: 2rem;
+}
+
+#other_reviews {
+  width: 50%;
+  margin: 2rem;
+}
+
+.review-title {
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.review-date {
+  color: #3A3C4E;
+}
+
+.review-text {
+  margin-bottom: 0;
+}
+
+.review-name {
+  margin-top: 0.4rem;
 }
 
 /***** PROCESS - PAYMENT FORM *****/
@@ -808,7 +849,7 @@ table {
   background-color: #E2DBCC;
 
   width: 100vw;
-  padding: 6rem 25% 8rem 25%;
+  padding: 8rem 25% 10rem 25%;
 }
 
 #brand_description h2 {
@@ -831,42 +872,31 @@ table {
 	grid-template-columns:33% 30% 30%;
 }
 
-
-
 .box {
   padding: 20px;
   font-size: 150%;
 }
 
-.box-text{
-  width:auto;
-  height:80erm;
-
-}
-
-.items-text{
+.items-text {
   text-align: center;
 }
-.items-text h1{
-  font-size: 15rem;
-  padding: 5rem 0 0 15rem;
-  color:
 
+.items-text h1 {
+  font-size: 10rem;
+  padding: 12.5rem 0 0 15rem;
+  color: #3A3C4E;
 }
 
-.image-link-container{
+.image-link-container {
   width:auto;
 }
 
-.box-text p{
-  font-size:1rem;
-}
-.box-text h5{
-  margin:10px 0 10px 00;
-
+.box-text h5 {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
 }
 
-.items-text{
+.items-text {
   background-image: url(http://www.sfu.ca/~yanhongw/01.jpg);
   width: 100vw;
   height: 90vh;
@@ -877,7 +907,7 @@ table {
   background-repeat: no-repeat;
 }
 
-.items-text img{
+.items-text img {
   position: relative;
   top: 100px;
   left: 250px;
@@ -885,7 +915,7 @@ table {
 
 }
 
-#article{
+#article {
   display: grid;
   grid-gap: 40px;
 	grid-template-columns:10% 30% 30% 20%;
@@ -902,65 +932,54 @@ height: 460px;
 background: #A9AD9D;
 }
 
-.ariticle-title p{
+.ariticle-title p {
   margin-top: 80px;
 }
 
-.ariticle-title hr{
+.ariticle-title hr {
   margin-top: 150px;
 }
-.article-image img{
+.article-image img {
   margin-bottom: 50px;
-
 }
 
-footer{
-  background-color:#FAFAF9;
+.article-date {
+  margin-top: 0;
+}
+
+/***** FOOTER *****/
+
+footer {
   text-align: center;
   height: 140px;
+  border-top: 1px solid #EEE;
 }
-#footer-items{
+
+#footer_items {
   display: grid;
   grid-gap: 10px;
 	grid-template-columns:10% 60% 30%;
 }
 
-.footer-items-nave nav{
-  display:inline-block;
+.footer-items-nav nav {
+  display: inline-block;
   margin-top: 20px;
 }
 
-.footer-items-logo img{
+.footer-items-logo img {
   width:40px;
   height: 40px;
   margin: 20px 0 20px 0;
 }
 
-.myButton {
-	background:#3A3C4E;
-	display:inline-block;
-	cursor:pointer;
-	color:#ffffff;
-	font-size:13px;
-	font-weight:bold;
-	padding:6px 19px;
-}
-.myButton:hover {
-	background:#FFB523;
-}
-.myButton:active {
-	position:relative;
-	top:1px;
+.footer-copyright p {
+  margin: 3rem;
+  float: left;
 }
 
-.footers-copyright p{
-  margin-block-end:0px;
-  margin-block-start:0;
-}
+/***** ABOUT PAGE *****/
 
-/***** PROCESS / ABOUT PAGE *****/
-
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -1093,6 +1112,24 @@ iframe{
     width: 45%;
   }
 
+  #ratings_reviews {
+    justify-content: center;
+    margin: 0;
+    width: 95%;
+  }
+
+  #ratings_reviews .block {
+    width: 90%;
+  }
+
+  #write_review {
+    width: 30%;
+  }
+
+  #other_reviews {
+    width: 45%;
+  }
+
   #payment_order_form .block {
     margin: 1.5rem;
   }
@@ -1161,6 +1198,21 @@ iframe{
 
   .price {
     font-size: 0.7rem;
+  }
+
+  #ratings_reviews {
+    justify-content: center;
+    margin: 0;
+    width: 95%;
+    flex-direction: column;
+  }
+
+  #ratings_reviews .block {
+    width: 90%;
+  }
+
+  #write_review, #other_reviews {
+    width: 90%;
   }
 
   #side_product_filters {
@@ -1235,6 +1287,10 @@ iframe{
 
   .featured-title {
     text-align: center;
+  }
+
+  #footer_items {
+    /* display: flex; */
   }
 }
 
