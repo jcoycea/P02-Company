@@ -8,6 +8,7 @@ body {
   font-family: "Europa", sans-serif;
   /* background: #FAFAF9; */
 	font-size: 0.85rem;
+  margin: 0;
 }
 
 h1 {
@@ -957,7 +958,7 @@ footer {
 
 #footer_items {
   display: grid;
-  grid-gap: 10px;
+  /* grid-gap: 10px; */
 	grid-template-columns:10% 60% 30%;
 }
 
