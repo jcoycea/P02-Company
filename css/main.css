@@ -874,18 +874,14 @@ table {
 }
 
 .box {
-  padding: 20px;
+  padding: 40px;
   font-size: 150%;
-}
-
-.items-text {
-  text-align: center;
 }
 
 .items-text h1 {
   font-size: 10rem;
-  padding: 12.5rem 0 0 15rem;
-  color: #3A3C4E;
+
+  color: White;
 }
 
 .image-link-container {
@@ -901,6 +897,7 @@ table {
   background-image: url(http://www.sfu.ca/~yanhongw/01.jpg);
   width: 100vw;
   height: 90vh;
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -913,7 +910,6 @@ table {
   top: 100px;
   left: 250px;
   width: 30%;
-
 }
 
 #article {
@@ -958,8 +954,7 @@ footer {
 
 #footer_items {
   display: grid;
-  /* grid-gap: 10px; */
-	grid-template-columns:10% 60% 30%;
+	grid-template-columns:20% 80%;
 }
 
 .footer-items-nav nav {
@@ -977,6 +972,11 @@ footer {
   margin: 3rem;
   float: left;
 }
+
+.footer-items-form input{
+  height: 40px;
+}
+
 
 /***** ABOUT PAGE *****/
 
@@ -1039,12 +1039,16 @@ iframe{
   .block {
     width: 28%;
   }
+
+
+
 }
 
 @media screen and (max-width: 1152px) {
   .shipping_province .form_select select {
     width: 125%;
   }
+
 }
 
 @media screen and (max-width: 1145px) {
@@ -1143,6 +1147,7 @@ iframe{
   #payment_method {
     width: 65%;
   }
+
 }
 
 @media screen and (max-width: 910px) {
@@ -1369,4 +1374,151 @@ iframe{
   .brand-imagery img {
     width: 40%;
   }
+
+  iframe{
+    width: auto;
+    height: auto;
+  }
+
+}
+
+
+/* Extra @media setting for journal.html, journal_detail.html, footer and about.html */
+
+@media screen and (max-width: 1199px) {
+
+}
+@media screen and (max-width: 959px) {
+  div.main_journal{
+    display: grid;
+    grid-template-columns:50% 50%;
+  }
+  div.items-text h1{
+    font-size: 10rem;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: -300px;
+    color:white;
+  }
+  .items-text{
+    background-size: 100% 60%;
+  }
+
+  .items-text img{
+    padding-bottom: 20px;
+  }
+  #journal{
+    margin-top: -20rem;
+    margin-left: 10%;
+  }
+
+  #footer_items{
+    grid-template-columns:40% 60%;
+  }
+  .footer-copyright{
+    padding-left: 35%;
+  }
+
+  #about-detail img{
+    width: 20rem;
+    height:20rem;
+  }
+
+
+
+}
+
+@media screen and (max-width: 479px) {
+  div.main_journal{
+    display: block;
+    width: 95%;
+  }
+  div.items-text h1{
+    font-size: 4rem;
+    padding-top: 0px;
+    padding-left: 0px;
+    margin-top: -200px;
+    color:white;
+  }
+  .items-text{
+    background-size: 100% 50%;
+  }
+
+  .items-text img{
+    padding-bottom: 20px;
+  }
+
+  #journal{
+    margin-top: -15rem;
+    margin-left: 10%;
+  }
+ /* FOOTER */
+
+  #footer_items {
+  	grid-template-columns:50% 50%;
+  }
+
+  .footer-items-nav nav{
+    display: block;
+
+  }
+
+  .footer-items-form{
+    display: block;
+    padding-left: 40px;
+  }
+
+  .footer-items-form input {
+    width: 50%;
+    height: 40px;
+    margin: 2px 0 0 0;
+    box-sizing: border-box;
+  }
+  .footer-copyright{
+    padding-left: 100px;
+  }
+
+  #about-detail img{
+    width: 10rem;
+    height:10rem;
+  }
+
+  iframe{
+    width: 30rem;
+    height:10rem;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  #about {
+      grid-gap: 10px;
+      grid-template-columns: 20% 80%;
+  }
+
+  #about-detail table{
+    width:50% 50%;
+    border-collapse: separate;
+    border-spacing: 40px 5px;
+  }
+
+  #about-detail p{
+    font-size: 12px;
+  }
+
+  .about-header h3{
+    font-size:0.5rem;
+
+  }
+  .about-header p{
+    color:white;
+  }
+  .about-header h4{
+    font-size: 12px;
+  }
+  #about-detail img{
+    width: 15rem;
+    height: 5rem;
+    margin-top: 1rem;
+  }
+
 }
