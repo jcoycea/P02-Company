@@ -6,10 +6,15 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/grids.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+
     <header>
+
       <div id="global_nav">
 
         <!-- Desktop Navigation -->
@@ -19,28 +24,45 @@
               <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
             </a>
             <a href="shop.html" class="main_nav_item">Shop</a>
-            <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
+            <a href="#" class="main_nav_item">Lookbooks</a>
             <a href="about.html" class="main_nav_item">About</a>
-            <a href="journal.html" class="main_nav_item"><span class="current_link">Journal</span></a>
+            <a href="journal.html" class="main_nav_item">Journal</a>
+            <div class="icon_nav">
+              <a href="checkout_cart.html" class="main_nav_item"><i class="material-icons">shopping_cart</i></a>
+              <a href="#" class="main_nav_item"><i class="material-icons">search</i></a>
+            </div>
           </nav>
         </div>
 
         <!-- Mobile Navigation -->
         <div class="mobile_nav">
           <nav class="main_nav">
-            <a href="home.html" id="logo-icon" class="main_nav_item">
-              <img src="img/olderbrother-icon.png" alt="Olderbrother Logo Icon">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="material-icons">menu</i>
             </a>
-            <a href="shop.html" class="main_nav_item">Shop</a>
-            <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
-            <a href="about.html" class="main_nav_item">About</a>
-            <a href="journal.html" class="main_nav_item">Journal</a>
+            <div class="mobile-links">
+              <div class="logo_nav">
+                <a href="home.html"><img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo" id="logo-wordmark"></a>
+              </div>
+              <div class="icon_nav">
+                <a href="checkout_cart.html"><i class="material-icons">shopping_cart</i></a>
+                <a href="#"><i class="material-icons">search</i></a>
+              </div>
+            </div>
+            <div id="dropdown-links">
+              <a href="shop.html">Shop</a>
+              <a href="#">Lookbooks</a>
+              <a href="about.html">About</a>
+              <a href="journal.html">Journal</a>
+            </div>
+
           </nav>
         </div>
 
       </div>
-    </header>
 
+    </header>
 
     <!-- journal article -->
     <div id="article">
@@ -99,31 +121,79 @@
       </div>
     </div>
 
-    <!-- footer -->
+    <footer class="page_footer">
 
-    <footer>
-      <div id="footer_items">
-        <div class="footer-items-logo">
-          <img src="img/olderbrother-icon.png" alt="">
-        </div>
-          <div class="footer-items-nav">
-            <nav>
-              <a href="#" class="main_nav_item">Account</a>
-              <a href="#" class="main_nav_item">FAQs</a>
-              <a href="checkout_cart.html" class="main_nav_item">Cart</a>
-              <a href="style_guide.html" class="main_nav_item">Style Guide</a>
-            </nav>
+        <div id="main_footer" class="content_container">
+
+          <div id="footer-newsletter">
+            <div class="block">
+              <h4 class="footer-title">Subscribe to our Newsletter</h4>
+              <p class="newsletter-desc">Universal garments equally tailored to fit men, women and people. Sign up to receive updates on new launches and news.</p>
+
+              <div class="footer-items-form">
+                <input type="text" id="subscribe-news-input" class="input-box" placeholder="Email Address">
+                <a href="#" id="subscribe-news-btn" class="primary-btn">Submit</a>
+              </div>
+            </div>
           </div>
-        <div class="footer-items-form">
-          <h4>Subscribe to our newsletter</h4>
-          <label for="input-name" class="text-label"></label>
-          <input type="text" id="input-name" value="Email Address">
-          <a href="#" class="primary-btn">Submit</a>
+
+          <div id="footer-nav">
+            <div class="block">
+              <h4 class="footer-title">Company</h4>
+              <div class="footer-links">
+                <a href="about.html">About Us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">Press</a><br>
+                <a href="#">Stockists</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <h4 class="footer-title">Contact</h4>
+              <div class="footer-links">
+                <a href="mailto:howdy@olderbrother.us">Email Us</a><br>
+                <a href="#">Visit the Store</a><br>
+                <a href="#">Help & FAQ</a><br>
+                <a href="#">Shipping</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="footer-social-media content_icon">
+                <h4 class="footer-title">Stay Connected</h4>
+                <ul class="icon_lists">
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://twitter.com/olderbrotherus" target="_blank" title="Twitter">&#xe84c;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.instagram.com/olderbrother" target="_blank" title="Instagram">&#xe6fc;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.pinterest.ca/olderbrotherpin/" target="_blank" title="Pinterest">&#xe7a8;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.facebook.com/OlderBrother.us/" target="_blank" title="Facebook">&#xe64e;</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
         </div>
       </div>
-      <div class="footer-copyright">
-        <p>COPYRIGHT @ IAT339 TEAM 16</p>
+
+      <div class="footer_copyright">
+        <div class="content_container">
+          <div class="copyright-text">
+            <a href="#">Copyright © IAT 339 Team 16</a>
+          </div>
+          <div class="copyright-links">
+            <a href="style_guide.html" target="_blank">Style Guide</a>
+            <a href="https://github.com/joyceca9/P02-Company" target="_blank">Github</a>
+            <a href="citations.html" target="_blank">Citations</a>
+          </div>
+        </div>
       </div>
+
     </footer>
 
   </body>
