@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title class="page_title">Olderbrother | Product Name</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/fonts.css">
+    <link rel="stylesheet" type="text/css" href="css/grids.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <header>
+
+      <div id="global_nav">
+
+        <!-- Desktop Navigation -->
+        <div class="desktop_nav">
+          <nav class="main_nav">
+            <a href="home.html" id="logo-wordmark" class="main_nav_item">
+              <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
+            </a>
+            <a href="shop.html" class="main_nav_item">Shop</a>
+            <a href="#" class="main_nav_item">Lookbooks</a>
+            <a href="about.html" class="main_nav_item">About</a>
+            <a href="journal.html" class="main_nav_item">Journal</a>
+            <div class="icon_nav">
+              <a href="checkout_cart.html" class="main_nav_item"><i class="material-icons">shopping_cart</i></a>
+              <a href="#" class="main_nav_item"><i class="material-icons">search</i></a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile_nav">
+          <nav class="main_nav">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="material-icons">menu</i>
+            </a>
+            <div class="mobile-links">
+              <div class="logo_nav">
+                <a href="home.html"><img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo" id="logo-wordmark"></a>
+              </div>
+              <div class="icon_nav">
+                <a href="checkout_cart.html"><i class="material-icons">shopping_cart</i></a>
+                <a href="#"><i class="material-icons">search</i></a>
+              </div>
+            </div>
+            <div id="dropdown-links">
+              <a href="shop.html">Shop</a>
+              <a href="#">Lookbooks</a>
+              <a href="about.html">About</a>
+              <a href="journal.html">Journal</a>
+            </div>
+
+          </nav>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!-- ONE PRODUCT DETAILED VIEW -->
+    <!-- PURCHASING PROCESS (use tabindex)-->
+    <!-- USER FEEDBACK (REVIEWS) ON PRODUCT -->
+
+    <div class="content_container">
+
+      <section id="individual_product">
+
+          <div class="block">
+            <div class="product_image">
+              <img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Raglan Crew - Tie Dye Sky Indigo" width="400px">
+            </div>
+          </div>
+
+          <div class="block">
+            <div class="product_details">
+              <h1 class="product_name">Raglan Crew</h1>
+              <h4 class="product_clr">Tie Dye Sky Indigo</h4>
+              <p class="price">$225.00</p>
+
+              <div class="product_options">
+                <div class="size_selector">
+                  <label class="text-label">Size</label><br>
+                  <select name="size" class="product_select"><br>
+                    <option value="extra-small">XS</option>
+                    <option value="medium">M</option>
+                    <option value="large">L</option>
+                    <option value="extra-large">XL</option>
+                  </select>
+                </div>
+
+                <div class="quantity_selector">
+                  <label class="text-label">Quantity</label><br>
+                  <select name="quantity" class="product_select"><br>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                  </select>
+                </div>
+              </div>
+
+              <p class="product_desc">Organic Japanese cotton drop shoulder, crewneck sweatshirt. Naturally tie-dyed by hand with indigo. Boxy, relaxed fit.</p>
+
+              <a href="checkout_cart.html" class="atc-btn">Add to Cart</a>
+            </div>
+          </div>
+
+      </section>
+
+      <section id="featured_products">
+
+        <h3 class="featured-title">You May Also Like</h3>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-rugby-shirt-natural-sky-indigo.png" alt="Lookbook - Rugby Shirt">
+              <img class="hover-img" src="img/rugby-shirt-natural-sky-indigo.png" alt="Rugby Shirt - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Rugby Shirt</a></h3>
+            <h4>Natural/Sky Indigo</h4>
+            <p class="price">$195.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-geri-pants-sky-indigo.png" alt="Lookbook - Geri Pants">
+              <img class="hover-img" src="img/geri-pants-sky-indigo.png" alt="Geri Pants - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Geri Pants</a></h3>
+            <h4>Sky Indigo</h4>
+            <p class="price">$265.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-hoodie-tie-dye-sky-indigo.png" alt="Lookbook - Hoodie">
+              <img class="hover-img" src="img/hoodie-tie-dye-sky-indigo.png" alt="Hoodie - Tie Dye Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Hoodie</a></h3>
+            <h4>Tie Dye Sky Indigo</h4>
+            <p class="price">$225.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-ob-tee-tie-dye-saffron.png" alt="Lookbook - OB Tee">
+              <img class="hover-img" src="img/ob-tee-tie-dye-saffron.png" alt="OB Tee - Tie Dye Saffron">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">OB Tee</a></h3>
+            <h4>Tie Dye Saffron</h4>
+            <p class="price">$120.00</p>
+          </section>
+        </div>
+
+      </section>
+
+    </div>
+
+    <section id="ratings_reviews">
+      <div id="write_review">
+        <div class="block">
+          <h3 class="reviews-heading">Write a Review</h3>
+          <br>
+          <div class="account_email">
+            <label for="email" class="text-label">Email Address</label>
+            <input type="text" id="email" class="input-box">
+          </div><br>
+
+          <div class="account_pass">
+            <label for="password" class="text-label">Password</label>
+            <input type="text" id="password" class="input-box">
+          </div>
+
+          <h5 class="intext-link"><a href="#">Forgot your password?</a></h5>
+
+          <div class="sign_up_btns">
+            <a href="#" class="secondary-btn">Sign Up</a>
+            <a href="#" class="primary-btn">Sign In</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div id="other_reviews">
+        <div class="block">
+          <h3 class="reviews_heading">Other Reviews</h3>
+
+          <div class="written-review">
+            <h4 class="review-date">21/08/2019</h4>
+            <div class="stars">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <h3 class="review-title">A summer piece that I will be adding to my fall wardrobe</h3>
+            <p class="review-text">Super soft and and comfortable and a fun spin on a classic crewneck.</p>
+            <h4 class="review-name">By Kelly P</h4>
+          </div>
+
+          <div class="written-review seperator-line">
+            <h4 class="review-date">11/07/2019</h4>
+            <div class="stars">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <h3 class="review-title">My new favourite crewneck</h3>
+            <p class="review-text">A summer staple on cooler nights and the sky indigo colour is magical!</p>
+            <h4 class="review-name">By Madison C</h4>
+          </div>
+
+          <div class="written-review seperator-line">
+            <h4 class="review-date">28/04/2019</h4>
+            <div class="stars">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <h3 class="review-title">Love the simplicity and sustainability of this fashion brand</h3>
+            <p class="review-text">I've already turned so many of my friends onto Olderbrother clothing.</p>
+            <h4 class="review-name">By Skyler L</h4>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <footer class="page_footer">
+
+        <div id="main_footer" class="content_container">
+
+          <div id="footer-newsletter">
+            <div class="block">
+              <h4 class="footer-title">Subscribe to our Newsletter</h4>
+              <p class="newsletter-desc">Universal garments equally tailored to fit men, women and people. Sign up to receive updates on new launches and news.</p>
+
+              <div class="footer-items-form">
+                <input type="text" id="subscribe-news-input" class="input-box" placeholder="Email Address">
+                <a href="#" id="subscribe-news-btn" class="primary-btn">Submit</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="footer-nav">
+            <div class="block">
+              <h4 class="footer-title">Company</h4>
+              <div class="footer-links">
+                <a href="about.html">About Us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">Press</a><br>
+                <a href="#">Stockists</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <h4 class="footer-title">Contact</h4>
+              <div class="footer-links">
+                <a href="mailto:howdy@olderbrother.us">Email Us</a><br>
+                <a href="#">Visit the Store</a><br>
+                <a href="#">Help & FAQ</a><br>
+                <a href="#">Shipping</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="footer-social-media content_icon">
+                <h4 class="footer-title">Stay Connected</h4>
+                <ul class="icon_lists">
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://twitter.com/olderbrotherus" target="_blank" title="Twitter">&#xe84c;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.instagram.com/olderbrother" target="_blank" title="Instagram">&#xe6fc;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.pinterest.ca/olderbrotherpin/" target="_blank" title="Pinterest">&#xe7a8;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.facebook.com/OlderBrother.us/" target="_blank" title="Facebook">&#xe64e;</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="footer_copyright">
+        <div class="content_container">
+          <div class="copyright-text">
+            <a href="#">Copyright © IAT 339 Team 16</a>
+          </div>
+          <div class="copyright-links">
+            <a href="style_guide.html" target="_blank">Style Guide</a>
+            <a href="https://github.com/joyceca9/P02-Company" target="_blank">Github</a>
+            <a href="citations.html" target="_blank">Citations</a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+</html>

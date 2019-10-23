@@ -6,7 +6,10 @@
     <title class="page_title">Olderbrother | Home</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -23,22 +26,39 @@
               <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
             </a>
             <a href="shop.html" class="main_nav_item">Shop</a>
-            <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
-            <a href="process.html" class="main_nav_item">Process</a>
+            <a href="#" class="main_nav_item">Lookbooks</a>
+            <a href="about.html" class="main_nav_item">About</a>
             <a href="journal.html" class="main_nav_item">Journal</a>
+            <div class="icon_nav">
+              <a href="checkout_cart.html" class="main_nav_item"><i class="material-icons">shopping_cart</i></a>
+              <a href="#" class="main_nav_item"><i class="material-icons">search</i></a>
+            </div>
           </nav>
         </div>
 
         <!-- Mobile Navigation -->
         <div class="mobile_nav">
           <nav class="main_nav">
-            <a href="home.html" id="logo-icon" class="main_nav_item">
-              <img src="img/olderbrother-icon.png" alt="Olderbrother Logo Icon">
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="material-icons">menu</i>
             </a>
-            <a href="shop.html" class="main_nav_item">Shop</a>
-            <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
-            <a href="process.html" class="main_nav_item">Process</a>
-            <a href="journal.html" class="main_nav_item">Journal</a>
+            <div class="mobile-links">
+              <div class="logo_nav">
+                <a href="home.html"><img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo" id="logo-wordmark"></a>
+              </div>
+              <div class="icon_nav">
+                <a href="checkout_cart.html"><i class="material-icons">shopping_cart</i></a>
+                <a href="#"><i class="material-icons">search</i></a>
+              </div>
+            </div>
+            <div id="dropdown-links">
+              <a href="shop.html">Shop</a>
+              <a href="#">Lookbooks</a>
+              <a href="about.html">About</a>
+              <a href="journal.html">Journal</a>
+            </div>
+
           </nav>
         </div>
 
@@ -47,144 +67,257 @@
     </header>
 
     <!-- CHECKOUT PROCESS - PAYMENT -->
+    <div class="content_container">
 
-    <section id="payment_order_form">
-      <h2 class="main_heading">Payment</h2>
+      <section id="payment_order_form">
 
-      <h3 class="sub_heading">Payment Information</h3>
-
-        <div class="container">
-
+        <div id="order_summary">
           <div class="block">
-            <div class="order_summary">
-              <h4 id="order-summary-title">Order Summary</h4>
+            <h4 id="order-summary-title">Order Summary</h4>
 
-              <div class="order-line">
-                <p class="summary-left">Items (3)</p>
-                <p class="summary-right">$645.00</p>
-              </div>
-
-              <div class="order-line">
-                <p class="summary-left">Shipping</p>
-                <p class="summary-right">FREE</p>
-              </div>
-
-              <div class="order-line">
-                <p class="summary-left">Taxes</p>
-                <p class="summary-right">$77.40</p>
-              </div>
-
-              <div class="order-line order-total">
-                <h4 id="order-total-title">Order Total</h4>
-                <h4 id="order-total-price">$722.40</h4>
-              </div>
-
-              <div class="shipping-address">
-                <div class="order-line">
-                  <h4 class="summary-left">Shipping Address</h4>
-                  <p class="summary-right"><a href="#" class="edit-link">Edit</a></p>
-                </div>
-                <p class="order-text">
-                  Jenna Appleseed<br>
-                  2455 W 5th Ave<br>
-                  Vancouver, BC V6K 1S7<br>
-                  Canada, 6041234567
-                </p>
-              </div>
-
-              <div class="shipping-method">
-                <div class="order-line">
-                  <h4 class="summary-left">Shipping Method</h4>
-                  <p class="summary-right"><a href="#" class="edit-link">Edit</a></p>
-                </div>
-                <p class="order-text">
-                  Standard Free Shipping<br>
-                  Delivers in 7-10 Business Days
-                </p>
-              </div>
-
+            <div class="order-line">
+              <p class="summary-left">Items (3)</p>
+              <p class="summary-right">$645.00</p>
             </div>
-          </div>
 
-          <div class="block">
-            <div class="payment_form">
+            <div class="order-line">
+              <p class="summary-left">Shipping</p>
+              <p class="summary-right">FREE</p>
+            </div>
 
-              <h4 id="card-info-title">Payment Method</h4>
-              <div class="pay_method">
-                <div class="method1">
-                  <input type="radio" value="radio_btn" name="method">
-                  <label for="radio_btn_name">Credit Card</label>
-                </div><br>
-                <div class="method2">
-                  <input type="radio" value="radio_btn" name="method">
-                  <label for="radio_btn_name">Paypal</label>
-                </div>
-              </div><br>
+            <div class="order-line">
+              <p class="summary-left">Taxes</p>
+              <p class="summary-right">$77.40</p>
+            </div>
 
-              <h4 id="card-info-title">Card Information</h4>
-              <div class="cardholder_name">
-                <label for="card_name" class="text-label">Name on Card</label>
-                <input type="text" id="card_name" class="input-box">
-              </div><br>
-
-              <div class="card_number">
-                <label for="card_num" class="text-label">Card Number</label>
-                <input type="text" id="card_num" class="input-box">
-              </div><br>
-
-              <div class="card_cvc">
-                <label for="card_cvc" class="text-label">Card CVC</label>
-                <input type="text" id="card_cvc" class="input-box">
-              </div><br>
-
-              <div class="card_expiry">
-                <label class="text-label">Expiry Date</label><br>
-
-                <div class="form_select">
-                  <select name="month" id="expiry_month"><br>
-                    <option value="jan">January</option>
-                    <option value="feb">February</option>
-                    <option value="mar">March</option>
-                    <option value="apr">April</option>
-                    <option value="may">May</option>
-                    <option value="jun">June</option>
-                    <option value="jul">July</option>
-                    <option value="aug">August</option>
-                    <option value="sep">September</option>
-                    <option value="oct">October</option>
-                    <option value="nov">November</option>
-                    <option value="dec">December</option>
-                  </select>
-                </div>
-
-                <div class="form_select">
-                  <select name="year" id="expiry_year">
-                    <option value="2019">2019</option>
-                    <option value="2020">2020</option>
-                    <option value="2021">2021</option>
-                    <option value="2022">2022</option>
-                    <option value="2023">2023</option>
-                  </select>
-                </div>
-
-              </div><br>
-
-              <div class="save_card">
-                <input type="radio" value="radio_btn">
-                <label for="radio_btn_name">Save card on file?</label>
-              </div><br>
-
-              <div class="pay_form_btns">
-                <a href="checkout_cart.html" class="secondary-btn">Go Back</a>
-                <a href="home.html" class="primary-btn">Checkout</a>
-              </div>
+            <div class="order-line order-total seperator-line">
+              <h4 id="order-total-title">Order Total</h4>
+              <h4 id="order-total-price">$722.40</h4>
+            </div>
 
           </div>
         </div>
+<!--
 
+-->
+        <div id="payment_form">
+          <div class="block">
+
+            <h4 id="card-info-title">Shipping Address</h4>
+            <div class="shipping_input">
+
+              <div class="shipping_name">
+                <label for="ship_name" class="text-label">Full Name</label>
+                <input type="text" id="ship_name" class="input-box">
+              </div><br>
+
+              <div class="shipping_address">
+                <label for="ship_street" class="text-label">Street Address</label>
+                <input type="text" id="ship_street" class="input-box">
+              </div><br>
+
+              <div class="shipping_apt">
+                <label for="ship_apt" class="text-label">Apt/Suite (Optional)</label>
+                <input type="text" id="ship_apt" class="input-box">
+              </div><br>
+
+              <div class="shipping_city_prov">
+                <div class="shipping_city">
+                  <label for="ship_city" class="text-label">City</label>
+                  <input type="text" id="ship_city" class="input-box">
+                </div><br>
+
+                <div class="shipping_province">
+                  <label for="province_option" class="text-label">Province</label><br>
+
+                  <div class="form_select">
+                    <select name="province" id="province_option"><br>
+                      <option value="1">British Columbia</option>
+                      <option value="2">Alberta</option>
+                      <option value="3">Saskatchewan</option>
+                      <option value="4">Manitoba</option>
+                      <option value="5">Ontario</option>
+                      <option value="6">Quebec</option>
+                      <option value="7">Newfoundland & Labrador</option>
+                      <option value="8">New Brunswick</option>
+                      <option value="9">Prince Edward Island</option>
+                      <option value="10">Nova Scotia</option>
+                    </select>
+                  </div>
+                </div>
+              </div><br>
+
+              <div class="shipping_postal">
+                <label for="ship_postal" class="text-label">Postal Code</label>
+                <input type="text" id="ship_postal" class="input-box">
+              </div><br>
+
+              <div class="shipping_country">
+                <label for="ship_country" class="text-label">Country</label>
+                <input type="text" id="ship_country" class="input-box" placeholder="Canada">
+              </div><br>
+
+              <div class="shipping_phone">
+                <label for="ship_phone" class="text-label">Phone Number</label>
+                <input type="text" id="ship_phone" class="input-box">
+              </div><br>
+
+            </div>
+
+            <div class="seperator-line">
+              <h4 id="card-info-title">Payment Method</h4>
+            </div>
+
+            <div class="pay_method">
+              <div class="method1">
+                <input type="radio" value="radio_btn" name="method">
+                <label for="radio_btn_name">Credit Card</label>
+              </div><br>
+              <div class="method2">
+                <input type="radio" value="radio_btn" name="method">
+                <label for="radio_btn_name">Paypal</label>
+              </div>
+            </div><br>
+
+            <h4 id="card-info-title">Card Information</h4>
+            <div class="cardholder_name">
+              <label for="card_name" class="text-label">Name on Card</label>
+              <input type="text" id="card_name" class="input-box">
+            </div><br>
+
+            <div class="card_number">
+              <label for="card_num" class="text-label">Card Number</label>
+              <input type="text" id="card_num" class="input-box">
+            </div><br>
+
+            <div class="card_cvc">
+              <label for="card_cvc" class="text-label">Card CVC</label>
+              <input type="text" id="card_cvc" class="input-box">
+            </div><br>
+
+            <div class="card_expiry">
+              <label for="expiry_month" class="text-label">Expiry Date</label><br>
+
+              <div class="form_select">
+                <select name="month" id="expiry_month"><br>
+                  <option value="jan">January</option>
+                  <option value="feb">February</option>
+                  <option value="mar">March</option>
+                  <option value="apr">April</option>
+                  <option value="may">May</option>
+                  <option value="jun">June</option>
+                  <option value="jul">July</option>
+                  <option value="aug">August</option>
+                  <option value="sep">September</option>
+                  <option value="oct">October</option>
+                  <option value="nov">November</option>
+                  <option value="dec">December</option>
+                </select>
+              </div>
+
+              <div class="form_select">
+                <select name="year" id="expiry_year">
+                  <option value="2019">2019</option>
+                  <option value="2020">2020</option>
+                  <option value="2021">2021</option>
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                </select>
+              </div>
+
+            </div><br>
+
+            <div class="save_card">
+              <input type="radio" value="radio_btn">
+              <label for="radio_btn_name">Save card on file?</label>
+            </div><br>
+
+            <div class="pay_form_btns">
+              <a href="checkout_cart.html" class="secondary-btn">Go Back</a>
+              <a href="home.html" class="primary-btn">Checkout</a>
+            </div>
+
+        </div>
       </div>
 
-    </section>
+      </section>
+
+    </div>
+
+    <footer class="page_footer">
+
+        <div id="main_footer" class="content_container">
+
+          <div id="footer-newsletter">
+            <div class="block">
+              <h4 class="footer-title">Subscribe to our Newsletter</h4>
+              <p class="newsletter-desc">Universal garments equally tailored to fit men, women and people. Sign up to receive updates on new launches and news.</p>
+
+              <div class="footer-items-form">
+                <input type="text" id="subscribe-news-input" class="input-box" placeholder="Email Address">
+                <a href="#" id="subscribe-news-btn" class="primary-btn">Submit</a>
+              </div>
+            </div>
+          </div>
+
+          <div id="footer-nav">
+            <div class="block">
+              <h4 class="footer-title">Company</h4>
+              <div class="footer-links">
+                <a href="about.html">About Us</a><br>
+                <a href="#">Careers</a><br>
+                <a href="#">Press</a><br>
+                <a href="#">Stockists</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <h4 class="footer-title">Contact</h4>
+              <div class="footer-links">
+                <a href="mailto:howdy@olderbrother.us">Email Us</a><br>
+                <a href="#">Visit the Store</a><br>
+                <a href="#">Help & FAQ</a><br>
+                <a href="#">Shipping</a>
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="footer-social-media content_icon">
+                <h4 class="footer-title">Stay Connected</h4>
+                <ul class="icon_lists">
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://twitter.com/olderbrotherus" target="_blank" title="Twitter">&#xe84c;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.instagram.com/olderbrother" target="_blank" title="Instagram">&#xe6fc;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.pinterest.ca/olderbrotherpin/" target="_blank" title="Pinterest">&#xe7a8;</a></span>
+                  </li>
+                  <li class="icon">
+                    <span class="iconfont"><a href="https://www.facebook.com/OlderBrother.us/" target="_blank" title="Facebook">&#xe64e;</a></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+        </div>
+      </div>
+
+      <div class="footer_copyright">
+        <div class="content_container">
+          <div class="copyright-text">
+            <a href="#">Copyright © IAT 339 Team 16</a>
+          </div>
+          <div class="copyright-links">
+            <a href="style_guide.html" target="_blank">Style Guide</a>
+            <a href="https://github.com/joyceca9/P02-Company" target="_blank">Github</a>
+            <a href="citations.html" target="_blank">Citations</a>
+          </div>
+        </div>
+      </div>
+
+    </footer>
 
   </body>
 </html>

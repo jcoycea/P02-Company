@@ -35,14 +35,15 @@
   width: 100%;
   overflow: hidden;
 }
+
 ul.icon_lists{
   padding-left: 0px;
 }
 
 .icon_lists li {
   width: 30px;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 1rem;
+  margin-right: 0.5rem;
   text-align: left;
   cursor: default;
   display: inline-block;
@@ -57,6 +58,5 @@ ul.icon_lists{
 }
 
 .message{
-
   height:100px;
 }

@@ -6,19 +6,19 @@
     <title class="page_title">Olderbrother | Checkout</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
-    <link rel="stylesheet" type="text/css" href="css/grids.css" />
+    <link rel="stylesheet" type="text/css" href="css/grids.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
 
-    <header>
+    <header class="content_container">
       <h1>Olderbrother Style Guide Template</h1>
 
       <p>This styleguide is a resource to provide a common language around Olderbrother's design patterns.</p>
 
       <nav class="main_nav">
-        <a href="index.html" class="main_nav_item">Style Guide</a>
+        <a href="style_guide.html" class="main_nav_item">Style Guide</a>
         <a href="product-page.html" class="main_nav_item">Products</a>
         <a href="checkout-cart.html" class="main_nav_item"><span class="current_link">Checkout</span></a>
         <a href="payment-form.html" class="main_nav_item">Payment</a>
@@ -26,172 +26,91 @@
 
     </header>
 
-    <section id="checkout_cart">
-      <h2 class="main_heading">Checkout</h2>
+    <div class="content_container">
 
-      <h3 class="sub_heading">Checkout Cart</h3>
+      <section id="checkout_cart">
+        <h2 class="main_heading">Checkout</h2>
 
-      <div class="container">
-        <table>
-            <thead>
-              <tr>
-                <th scope="col" id="product-table-title" colspan="2">Product</th>
-                <th scope="col" id="quantity-table-title">Quantity</th>
-                <th scope="col" id="price-table-title">Price</th>
-              </tr>
-            </thead>
+        <h3 class="sub_heading">Checkout Cart</h3>
 
-            <tbody>
+        <div class="content_container">
+          <table id="view_cart">
+              <thead>
+                <tr>
+                  <th scope="col" id="product-table-title" colspan="2">Product</th>
+                  <th scope="col" id="quantity-table-title">Quantity</th>
+                  <th scope="col" id="price-table-title">Price</th>
+                </tr>
+              </thead>
 
-              <tr>
-                <td colspan="2">
+              <tbody>
 
-                  <div class="checkout_product">
-                    <img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Crewneck - Tie Dye Sky" class="checkout_prod_img">
-                    <div class="checkout_product_info">
-                      <h3 class="checkout_product_name">Raglan Crew</h3>
-                      <h5 class="checkout_product_color">Tie Dye Sky Indigo</h5>
-                      <p class="checkout_size">Size: S</p>
+                <tr>
+                  <td colspan="2">
+
+                    <div class="checkout_product">
+                      <img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Crewneck - Tie Dye Sky" class="checkout_prod_img">
+                      <div class="checkout_product_info">
+                        <h3 class="checkout_product_name">Raglan Crew</h3>
+                        <h5 class="checkout_product_color">Tie Dye Sky Indigo</h5>
+                        <p class="checkout_size">Size: S</p>
+                      </div>
                     </div>
-                  </div>
 
-                </td>
-                <td class="checkout_quantity">1</td>
-                <td class="checkout_price">$225.00</td>
-              </tr>
+                  </td>
+                  <td class="checkout_quantity">1</td>
+                  <td class="checkout_price">$225.00</td>
+                </tr>
 
-              <tr>
-                <td colspan="2">
-                  <div class="checkout_product">
-                    <img src="img/hoodie-saffron.png" alt="Hoodie - Saffron" class="checkout_prod_img">
-                    <div class="checkout_product_info">
-                      <h3 class="checkout_product_name">Hoodie</h3>
-                      <h5 class="checkout_product_color">Saffron</h5>
-                      <p class="checkout_size">Size: M</p>
+                <tr>
+                  <td colspan="2">
+                    <div class="checkout_product">
+                      <img src="img/hoodie-saffron.png" alt="Hoodie - Saffron" class="checkout_prod_img">
+                      <div class="checkout_product_info">
+                        <h3 class="checkout_product_name">Hoodie</h3>
+                        <h5 class="checkout_product_color">Saffron</h5>
+                        <p class="checkout_size">Size: M</p>
+                      </div>
                     </div>
-                  </div>
-                </td>
+                  </td>
 
-                <td class="checkout_quantity">1</td>
-                <td class="checkout_price">$225.00</td>
-              </tr>
+                  <td class="checkout_quantity">1</td>
+                  <td class="checkout_price">$225.00</td>
+                </tr>
 
-              <tr>
-                <td colspan="2">
-                  <div class="checkout_product">
-                    <img src="img/chore-coat-natural.png" alt="Chore Coat - Natural" class="checkout_prod_img">
-                    <div class="checkout_product_info">
-                      <h3 class="checkout_product_name">Chore Coat</h3>
-                      <h5 class="checkout_product_color">Natural</h5>
-                      <p class="checkout_size">Size: M</p>
+                <tr>
+                  <td colspan="2">
+                    <div class="checkout_product">
+                      <img src="img/chore-coat-natural.png" alt="Chore Coat - Natural" class="checkout_prod_img">
+                      <div class="checkout_product_info">
+                        <h3 class="checkout_product_name">Chore Coat</h3>
+                        <h5 class="checkout_product_color">Natural</h5>
+                        <p class="checkout_size">Size: M</p>
+                      </div>
                     </div>
-                  </div>
-                </td>
+                  </td>
 
-                <td class="checkout_quantity">1</td>
-                <td class="checkout_price">$245.00</td>
-              </tr>
+                  <td class="checkout_quantity">1</td>
+                  <td class="checkout_price">$245.00</td>
+                </tr>
 
-            </tbody>
+              </tbody>
 
-            <tfoot>
-              <tr>
-                <td></td>
-                <td></td>
-                <td id="total-title">Total</td>
-                <td id="total-price">$645.00</td>
-              </tr>
-            </tfoot>
+              <tfoot>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td id="total-title">Total</td>
+                  <td id="total-price">$645.00</td>
+                </tr>
+              </tfoot>
 
-          </table>
-        </div>
+            </table>
+          </div>
 
-    </section>
+      </section>
 
-    <h4>Code:</h4>
-    <code>
-      &lt;section id="checkout_cart"&gt;<br>
-      &nbsp;&lt;h2 class="main_heading"&gt;Checkout&lt;/h2&gt;<br>
-<br>
-      &nbsp;&lt;h3 class="sub_heading"&gt;Checkout Cart&lt;/h3&gt;<br>
-<br>
-      &nbsp;&lt;div class="container"&gt;<br>
-      &nbsp;&nbsp;&lt;table&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;thead&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col" id="product-table-title" colspan="2"&gt;Product&lt;/th&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col" id="quantity-table-title"&gt;Quantity&lt;/th&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th scope="col" id="price-table-title"&gt;Price&lt;/th&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/thead&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tbody&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="checkout_product"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Crewneck - Tie Dye Sky" class="checkout_prod_img"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="checkout_product_info"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="checkout_product_name"&gt;Raglan Crew&lt;/h3&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="checkout_product_color"&gt;Tie Dye Sky Indigo&lt;/h5&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="checkout_size"&gt;Size: S&lt;/p&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="checkout_quantity"&gt;1&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="checkout_price"&gt;$225.00&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="checkout_product"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/hoodie-saffron.png" alt="Hoodie - Saffron" class="checkout_prod_img"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="checkout_product_info"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="checkout_product_name"&gt;Hoodie&lt;/h3&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="checkout_product_color"&gt;Saffron&lt;/h5&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="checkout_size"&gt;Size: M&lt;/p&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="checkout_quantity"&gt;1&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="checkout_price"&gt;$225.00&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td colspan="2"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="checkout_product"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src="img/chore-coat-natural.png" alt="Chore Coat - Natural" class="checkout_prod_img"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="checkout_product_info"&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3 class="checkout_product_name"&gt;Chore Coat&lt;/h3&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5 class="checkout_product_color"&gt;Natural&lt;/h5&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p class="checkout_size"&gt;Size: M&lt;/p&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/td&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="checkout_quantity"&gt;1&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td class="checkout_price"&gt;$245.00&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tbody&gt;<br>
-<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;tfoot&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td id="total-title"&gt;Total&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td id="total-price"&gt;$645.00&lt;/td&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br>
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tfoot&gt;<br>
-<br>
-      &nbsp;&nbsp;&lt;/table&gt;<br>
-      &nbsp;&lt;/div&gt;<br>
-<br>
-      &lt;/section&gt;
-    </code>
+    </div>
 
   </body>
 
