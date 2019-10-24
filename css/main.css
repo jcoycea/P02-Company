@@ -467,6 +467,25 @@ input[type="radio"]:hover:after {
   transition: 0.5s ease-out;
 }
 
+/***** LOOKBOOKS *****/
+
+#lookbook_overview {
+  margin-top: 50px;
+  background: #F5F5F2;
+}
+
+#lookbook_overview .content_container {
+  width: 100%;
+}
+
+.lookbook_image {
+  border: 1px solid #3A3C4E;
+}
+
+.lookbook_info {
+  text-align: center;
+}
+
 /***** SHOP - MULTIPLE PRODUCTS *****/
 
 #shop {
@@ -1405,6 +1424,10 @@ iframe{
     width: 40%;
   }
 
+  #lookbook_overview .block {
+    width: 40%;
+  }
+
   .mobile_nav {
     display: block;
   }
@@ -1616,6 +1639,10 @@ iframe{
 
   .footer-social-media ul.icon_lists {
     text-align: left;
+  }
+
+  #lookbook_overview .block {
+    width: 90%;
   }
 
   #featured_products .block {
