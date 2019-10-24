@@ -1561,6 +1561,11 @@ iframe{
   #dropdown_product_filters {
     display: block;
   }
+
+  #featured_products .block {
+    width: 44.5%;
+    margin: 0.5rem;
+  }
 }
 
 /* Mobile View */
