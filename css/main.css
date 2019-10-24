@@ -1372,6 +1372,14 @@ iframe{
   .content_container #multiple_products {
     width: 100%;
   }
+
+  #lookbook_overview .content_container {
+    width: 100%;
+  }
+
+  #lookbook_overview .block {
+    width: 44%;
+  }
 }
 
 @media screen and (max-width: 785px) {
@@ -1421,10 +1429,6 @@ iframe{
   }
 
   .block {
-    width: 40%;
-  }
-
-  #lookbook_overview .block {
     width: 40%;
   }
 
@@ -1485,6 +1489,12 @@ iframe{
   }
 }
 
+@media screen and (max-width: 768px) {
+  #lookbook_overview .block {
+    width: 44%;
+  }
+}
+
 @media screen and (max-width: 670px) {
   #brand_description {
     padding: 8rem 5% 10rem 8%;
@@ -1508,6 +1518,12 @@ iframe{
 @media screen and (max-width: 620px) {
   .checkout_product_info {
     padding: 5% 0;
+  }
+}
+
+@media screen and (max-width: 611px) {
+  #lookbook_overview .block {
+    width: 43%;
   }
 }
 
@@ -1556,6 +1572,12 @@ iframe{
   }
 }
 
+@media screen and (max-width: 531px) {
+  #lookbook_overview .block {
+    width: 40%;
+  }
+}
+
 @media screen and (max-width: 515px) {
   .checkout_product_info {
     padding: 2% 0;
@@ -1588,6 +1610,10 @@ iframe{
   #featured_products .block {
     width: 44.5%;
     margin: 0.5rem;
+  }
+
+  #lookbook_overview .block {
+    width: 90%;
   }
 }
 
@@ -1639,10 +1665,6 @@ iframe{
 
   .footer-social-media ul.icon_lists {
     text-align: left;
-  }
-
-  #lookbook_overview .block {
-    width: 90%;
   }
 
   #featured_products .block {
