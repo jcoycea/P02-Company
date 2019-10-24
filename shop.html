@@ -26,7 +26,7 @@
               <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
             </a>
             <a href="shop.html" class="main_nav_item">Shop</a>
-            <a href="#" class="main_nav_item">Lookbooks</a>
+            <a href="lookbooks.html" class="main_nav_item">Lookbooks</a>
             <a href="about.html" class="main_nav_item">About</a>
             <a href="journal.html" class="main_nav_item">Journal</a>
             <div class="icon_nav">
@@ -54,7 +54,7 @@
             </div>
             <div id="dropdown-links">
               <a href="shop.html">Shop</a>
-              <a href="#">Lookbooks</a>
+              <a href="lookbooks.html">Lookbooks</a>
               <a href="about.html">About</a>
               <a href="journal.html">Journal</a>
             </div>
@@ -67,10 +67,60 @@
     </header>
 
     <!-- MULTI-PRODUCT LISTING-->
+
+    <!-- mobile dropdown filters -->
+    <div class="toggle-drop-mobile-filters">
+      <nav id="dropdown_product_filters">
+
+        <div class="dropdown-nav-target">
+          <h5 class="dropdown-toggle filter-group-title" data-toggle="dropdown" id="menu-trigger">Collections</h5>
+          <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+        </div>
+        <div class="dropdown-filter-nav-content">
+          <a href="#" class="filter-tag">All</a>
+          <a href="#" class="filter-tag">Knits</a>
+          <a href="#" class="filter-tag">Tops</a>
+          <a href="#" class="filter-tag">Bottoms</a>
+          <a href="#" class="filter-tag">Outerwear</a>
+        </div>
+
+        <div class="dropdown-nav-target">
+          <h5 class="filter-group-title">Colors</h5>
+          <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+        </div>
+        <div class="dropdown-filter-nav-content">
+          <a href="#" class="filter-tag">All</a>
+          <a href="#" class="filter-tag">Saffron</a>
+          <a href="#" class="filter-tag">Sky Indigo</a>
+          <a href="#" class="filter-tag">Dark Indigo</a>
+          <a href="#" class="filter-tag">Black Indigo</a>
+          <a href="#" class="filter-tag">Natural</a>
+          <a href="#" class="filter-tag">Tie Dye</a>
+          <a href="#" class="filter-tag">White</a>
+        </div>
+
+        <div class="dropdown-nav-target">
+          <h5 class="filter-group-title">Sizes</h5>
+          <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+        </div>
+        <div class="dropdown-filter-nav-content">
+          <a href="#" class="filter-tag">All</a>
+          <a href="#" class="filter-tag">XXS</a>
+          <a href="#" class="filter-tag">XS</a>
+          <a href="#" class="filter-tag">S</a>
+          <a href="#" class="filter-tag">M</a>
+          <a href="#" class="filter-tag">L</a>
+          <a href="#" class="filter-tag">XL</a>
+        </div>
+
+      </nav>
+    </div>
+
     <div class="content_container" id="shop">
 
+        <!-- regular side filters -->
         <nav id="side_product_filters">
-          <div class="filter-group">
+          <div class="filter-group-content">
             <h5 class="filter-group-title">Collections</h5>
             <a href="#" class="filter-tag">All</a>
             <a href="#" class="filter-tag">Knits</a>
@@ -79,7 +129,7 @@
             <a href="#" class="filter-tag">Outerwear</a>
           </div>
 
-          <div class="filter-group">
+          <div class="filter-group-content">
             <h5 class="filter-group-title">Colors</h5>
             <a href="#" class="filter-tag">All</a>
             <a href="#" class="filter-tag">Saffron</a>
@@ -91,7 +141,7 @@
             <a href="#" class="filter-tag">White</a>
           </div>
 
-          <div class="filter-group">
+          <div class="filter-group-content">
             <h5 class="filter-group-title">Sizes</h5>
             <a href="#" class="filter-tag">All</a>
             <a href="#" class="filter-tag">XXS</a>
@@ -102,6 +152,8 @@
             <a href="#" class="filter-tag">XL</a>
         </div>
       </nav>
+
+
 
       <section id="multiple_products">
 
@@ -407,6 +459,6 @@
       </div>
 
     </footer>
-
+  	<script src="scripts/main.js"></script>
   </body>
 </html>

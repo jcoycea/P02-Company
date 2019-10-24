@@ -8,3 +8,25 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+'use strict';
+
+$(".dropdown-nav-target").click(function() {
+  $(".dropdown-filter-nav-content").toggleClass("open");
+});
+
+// 'use strict';
+//
+// var $toggle = 0;
+//
+// $(document).ready(function() {
+//   $(".dropdown-nav-target").click(function() {
+//   	if ($toggle == 0){
+//       $(".dropdown-filter-nav-content").slideDown("normal");
+//       $toggle = 1;
+//   	} else {
+//   	$(".dropdown-filter-nav-content").slideUp("normal");
+//   	$toggle = 0;
+//   	}
+// 	}
+// }
