@@ -9,6 +9,11 @@ function myFunction() {
   }
 }
 
+'use strict';
+
+$(".dropdown-nav-target").click(function() {
+  $(".dropdown-filter-nav-content").toggleClass("open");
+});
 
 // 'use strict';
 //

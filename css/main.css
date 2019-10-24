@@ -504,7 +504,6 @@ input[type="radio"]:hover:after {
 
 #dropdown_product_filters {
   margin-top: 70px;
-  list-style-type: none;
 }
 
 #dropdown_product_filters h5 {
@@ -514,8 +513,9 @@ input[type="radio"]:hover:after {
 }
 
 .dropdown-filter-nav-content {
-  display: none;
-  margin: 0.6rem 2em 1em 2em;
+  /* display: none; */
+  list-style-type: none;
+  margin: 0.6rem 2em 1em 2.3em;
 }
 
 .dropdown-nav-target {
