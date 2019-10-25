@@ -506,6 +506,18 @@ input[type="radio"]:hover:after {
   width: 20%;
 }
 
+.toggle-product-filter summary::-webkit-details-marker {
+  display: none;
+}
+
+.toggle-product-filter summary:hover {
+  border: 1px solid darkgray;
+}
+
+.toggle-product-filter summary:focus {
+  background-color: ghostwhite;
+}
+
 .filter-group-title {
   font-size: 1rem;
   margin-bottom: 0.8rem;
@@ -532,7 +544,6 @@ input[type="radio"]:hover:after {
 }
 
 .dropdown-filter-nav-content {
-  /* display: none; */
   list-style-type: none;
   margin: 0.6rem 2em 1em 2.3em;
 }
