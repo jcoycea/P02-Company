@@ -79,6 +79,9 @@ img {
 input {
   padding: 0.6rem 2rem;
   border: 1px solid #3A3C4E;
+  -webkit-border-radius: 0;
+  -ms-border-radius: 0;
+  border-radius: 0;
 }
 
 input[type="text"]:hover {
@@ -280,6 +283,12 @@ input[type="text"]:focus {
 .radio-color-swatch label, .save_card label, .pay_method label {
   margin-left: 0.1rem;
 }
+
+/* input[type="radio"]:before {
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+} */
 
 input[type="radio"]:after {
   width: 0.9rem;
@@ -646,7 +655,7 @@ input[type="radio"]:hover:after {
 
 .atc-btn {
   /* padding: 0.75rem 5rem; */
-  padding: 0.75rem 35%;
+  padding: 0.75rem 32%;
   margin-top: 1.75rem;
 }
 
@@ -780,6 +789,7 @@ input[type="radio"]:hover:after {
 .shipping_city_prov {
   display: flex;
   flex-wrap: nowrap;
+  align-items: flex-end;
 }
 
 .shipping_city {
@@ -834,8 +844,7 @@ select {
   outline: 0;
   font-size: 0.7rem;
   font-family: "Muli", sans-serif;
-  height: 2rem;
-  padding: 0.4rem 0.6rem 0.4rem 0.6rem;
+  padding: 0.6rem 0.6rem 0.6rem 0.6rem;
   flex-wrap: nowrap;
   box-sizing: border-box;
   margin: 0;
@@ -1633,7 +1642,7 @@ iframe{
 }
 
 /* Mobile View */
-@media screen and (max-width: 375px) { /* 414px */
+@media screen and (max-width: 375px) {
   .block {
     width: 100%;
   }
