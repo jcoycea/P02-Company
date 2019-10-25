@@ -1013,7 +1013,7 @@ table {
 
 /***** JOURNAL *****/
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -1040,17 +1040,18 @@ table {
   width: 80%;
 }
 
-#journal_overview{
-  background:#F5F5F2;
+#journal_overview {
+  background: #F5F5F2;
+  padding-bottom: 50px;
 }
 
-#journal{
+#journal {
   position: relative;
   top: 50px;
   margin-bottom: 10vw;
 }
 
-.main_journal{
+.main_journal {
   display: grid;
   grid-gap: 6px;
 	grid-template-columns:33% 33% 33%;
