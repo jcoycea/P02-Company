@@ -373,6 +373,12 @@ input[type="radio"]:hover:after {
   font-size: 1.2rem;
 }
 
+.main-page-title {
+  text-align: center;
+  color: #000;
+  margin-top: 100px;
+}
+
 /* this a container that holds the page body content */
 .content_container {
   width: 95%;
@@ -479,8 +485,13 @@ input[type="radio"]:hover:after {
 /***** LOOKBOOKS *****/
 
 #lookbook_overview {
-  margin-top: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #F5F5F2;
+}
+
+#lookbook_overview .main-page-title {
+  margin-top: 90px;
 }
 
 #lookbook_overview .content_container {
@@ -1021,6 +1032,7 @@ table {
   margin-top: 20rem;
   font-size: 13vw;
   color: #FFB523;
+  text-transform: uppercase;
 }
 
 .items-text img {
@@ -1047,10 +1059,6 @@ table {
 .box {
   padding: 40px;
   font-size: 150%;
-}
-
-.items-text {
-  text-align: center;
 }
 
 .image-link-container {
@@ -1884,20 +1892,25 @@ iframe{
   /* responsive for journal */
   .items-text {
     background-size: 88%;
-    margin-top: 3rem;
+    margin-top: 2rem;
+    text-align: center;
   }
 
   .items-text h1 {
-    margin-top: 10vw;
-    color: black;
+    margin: 80px 0 0 0; /* journal title is in same spot as other page titles */
+    color: #000;
+    font-size: 1.6rem;
     text-shadow: none;
+    text-transform: none;
+    padding: 0 25%;
   }
 
   .items-text img {
     display: none;
   }
 
-  #journal{
+  #journal {
+    margin-top: 80px;
   }
 
   .main_journal{
