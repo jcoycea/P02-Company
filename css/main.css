@@ -490,20 +490,91 @@ input[type="radio"]:hover:after {
   background: #F5F5F2;
 }
 
-#lookbook_overview .main-page-title {
-  margin-top: 90px;
+.mySlides {
+  display:none
 }
 
-#lookbook_overview .content_container {
-  width: 100%;
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-top: 2vw;
+  margin-left: 35vw;
+  margin-right: 35vw;
 }
 
-.lookbook_image {
-  border: 1px solid #3A3C4E;
+.slideshow-container img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.lookbook_info {
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #FFB523;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+.prev{
+    right: 35vw;
+}
+.next {
+  left: 35vw;
+  border-radius: 2px 0 0 2px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.8);
+}
+
+.lookbook_time{
   text-align: center;
+  padding: 2vw;
+}
+.lookbook_name {
+  padding: 8px 12px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #3A3C4E;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 22vw;
+}
+
+.dot-item{
+  text-align:center;
+  margin-top: 5vw;
+}
+
+.dot {
+  cursor:pointer;
+  height: 13px;
+  width: 13px;
+  margin: 10px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #FFB523;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 /***** SHOP - MULTIPLE PRODUCTS *****/
@@ -1797,12 +1868,19 @@ iframe{
       left: 20vw;
     }
 
+    /* responsive for about */
     #about {
       margin-top: 0;
     }
 
+    /* responsive for citations*/
     #citations_title h1{
       padding-top: 5vw;
+    }
+
+    /* responsive for lookbooks */
+    .dot-item {
+    margin-top: 8vw;
     }
 
 }
@@ -1820,7 +1898,6 @@ iframe{
   .items-text img {
     left: 5%;
   }
-
 
 /* responsive for journal article*/
 
@@ -1854,19 +1931,14 @@ iframe{
       margin-top: 25vw;
     }
 
-    .items-text img {
-
-    }
-
-    #journal{
-
-    }
-
     .box {
       padding: 20px;
     }
 
-    /* responsive for journal article*/
+    /* responsive for lookbooks */
+    .dot-item {
+    margin-top: 10vw;
+    }
 
 }
 
@@ -1981,9 +2053,28 @@ iframe{
      display: none;
    }
 
+   /* responsive for citations */
    #citations_title h1{
      padding-top: 10vw;
    }
+
+   /* responsive for lookbooks */
+   .lookbook_name{
+     font-size: 2vw;
+   }
+   .dot-item {
+   margin-top: 14vw;
+   }
+   .dot{
+     width:2vw;
+     height: 2vw;
+   }
+   .numbertext {
+    font-size: 1vw;
+    padding: 8px 0px;
+    top: 20vw;
+    left: 32vw;
+  }
 }
 
 
@@ -2015,6 +2106,16 @@ iframe{
 
   .items-text h1 {
     margin: 100px 0 0 0;
+  }
+
+  /* responsive for citations */
+  #citations_title h1{
+    padding-top: 10vw;
+  }
+
+  /* responsive for lookbooks */
+  .dot-item {
+  margin-top: 18vw;
   }
 
 }
