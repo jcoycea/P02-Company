@@ -1796,6 +1796,15 @@ iframe{
     .items-text h1{
       left: 20vw;
     }
+
+    #about {
+      margin-top: 0;
+    }
+
+    #citations_title h1{
+      padding-top: 5vw;
+    }
+
 }
 
 @media screen and (max-width: 959px){
@@ -1804,8 +1813,8 @@ iframe{
   /* responsive for journal */
 
   .items-text h1 {
-    font-size: 15vw;;
-    left: 15vw;
+    font-size: 15vw;
+    left: 20vw;
   }
 
   .items-text img {
@@ -1853,6 +1862,10 @@ iframe{
 
     }
 
+    .box {
+      padding: 20px;
+    }
+
     /* responsive for journal article*/
 
 }
@@ -1862,6 +1875,7 @@ iframe{
   /* responsive for about */
   #about {
       display: block;
+      margin-top: 0;
   }
 
   #about-detail p{
@@ -1874,7 +1888,6 @@ iframe{
   }
 
   .about-header h2{
-    font-size:36px;
     text-align: center;
   }
 
@@ -1903,7 +1916,7 @@ iframe{
     font-size: 1.6rem;
     text-shadow: none;
     text-transform: none;
-    padding: 0 25%;
+    padding: 0 18vw;
   }
 
   .items-text img {
@@ -1924,12 +1937,14 @@ iframe{
 
   #article{
      display: block;
-     margin: 20vw;
+     margin-top: 20vw;
+     margin-left: 5vw;
+     margin-right: 5vw;
    }
 
   #square {
     width: 100%;
-    height: 20vh;
+    height: 10vh;
   }
 
   .article-image-items{
@@ -1965,6 +1980,10 @@ iframe{
    #author{
      display: none;
    }
+
+   #citations_title h1{
+     padding-top: 10vw;
+   }
 }
 
 
@@ -1982,4 +2001,20 @@ iframe{
   /* responsive for journal */
   #journal{
   }
+
+  iframe{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 320px){
+    /* responsive for journal article*/
+  #square {
+    margin-top: 40vw;
+  }
+
+  .items-text h1 {
+    margin: 100px 0 0 0;
+  }
+
 }
