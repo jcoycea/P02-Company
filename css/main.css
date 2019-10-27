@@ -164,6 +164,11 @@ input[type="text"]:focus {
   padding-top: 0.8rem;
 }
 
+.element #global_nav { /* main navigation in the style guide */
+  margin-top: 1.5rem;
+  position: relative;
+}
+
 #global_nav {
   overflow: hidden; /* relative; */
   background-color: #FFF;
@@ -284,12 +289,6 @@ input[type="text"]:focus {
   margin-left: 0.1rem;
 }
 
-/* input[type="radio"]:before {
-  -webkit-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-} */
-
 input[type="radio"]:after {
   width: 0.9rem;
   height: 0.9rem;
@@ -320,7 +319,12 @@ input[type="radio"]:hover:after {
   border: 1px solid darkgray;
 }
 
-/* Hover over Image Link in Style Guide */
+
+.element .box { /* Hover over Image Link in Style Guide */
+  width: 30%;
+  padding: 0;
+}
+
 .image-link-container {
   position: relative;
   width: 20rem;
@@ -375,6 +379,8 @@ input[type="radio"]:hover:after {
 
 .main-page-title {
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
   color: #000;
   margin-top: 100px;
 }
@@ -442,11 +448,10 @@ input[type="radio"]:hover:after {
   color: #FFF;
 }
 
-.brand-imagery img {
+#brand-imagery .block {
   margin: 0.5rem;
-  width: 70%;
+  width: 30%;
   display: inline-block;
-  vertical-align: middle;
 }
 
 /***** PRODUCT PAGES - MULTIPLE *****/
@@ -460,7 +465,6 @@ input[type="radio"]:hover:after {
   flex-basis: 12rem;
   margin: 1rem;
   display: inline-block;
-  /* width: 50%; */
 }
 
 .image-link {
@@ -502,7 +506,7 @@ input[type="radio"]:hover:after {
   margin-right: 35vw;
 }
 
-.slideshow-container img{
+.slideshow-container img {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -519,9 +523,11 @@ input[type="radio"]:hover:after {
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
 }
-.prev{
+
+.prev {
     right: 35vw;
 }
+
 .next {
   left: 35vw;
   border-radius: 2px 0 0 2px;
@@ -531,10 +537,11 @@ input[type="radio"]:hover:after {
   background-color: rgba(255,255,255,0.8);
 }
 
-.lookbook_time{
+.lookbook_time {
   text-align: center;
   padding: 2vw;
 }
+
 .lookbook_name {
   padding: 8px 12px;
   position: absolute;
@@ -697,9 +704,7 @@ input[type="radio"]:hover:after {
 }
 
 .product_details {
-  /*padding: 10% 0;*/
   margin-top: 0;
-  /* width: 15rem; */
   text-align: left;
 }
 
@@ -736,7 +741,6 @@ input[type="radio"]:hover:after {
 }
 
 .atc-btn {
-  /* padding: 0.75rem 5rem; */
   padding: 0.75rem 32%;
   margin-top: 1.75rem;
 }
@@ -1142,21 +1146,24 @@ table {
   font-size: 1rem;
 }
 
-/* journal article */
+.article-date {
+  margin-top: 0;
+}
+
+/***** JOURNAL ARTICLE *****/
 
 #article {
   display: grid;
   grid-gap: 40px;
 	grid-template-columns:4% 32% 32% 20%;
   margin-top: 80px
-
 }
 
-.article-image{
+.article-image {
   margin-top: 5vw;
 }
 
-.article-image-item img{
+.article-image-item img {
   margin-top: 100px;
   width: 100%;
   height: 100%;
@@ -1267,52 +1274,51 @@ background: #A9AD9D;
 
 /***** ABOUT PAGE *****/
 
-#about{
+#about {
   display: grid;
   grid-gap: 40px;
 	grid-template-columns: 30% 65%;
   margin-top: 5rem;
 }
 
-.about-header h2{
+.about-header h2 {
   text-align: center;
 }
 
-#about-detail{
+#about-detail {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-video{
+video {
   margin-top: 2rem;
 }
 
-
-#about-detail table{
+#about-detail table {
   width:50% 50%;
   border-collapse: separate;
   border-spacing: 40px 5px;
 }
 
-#about-detail img{
+#about-detail img {
   width:100%;
   margin-top: 2rem;
 }
 
-
-#about-detail p{
+#about-detail p {
   margin-top: 2rem;
 }
 
-#about-img-item img{
+#about-img-item img {
   width:auto;
   height: auto;
 }
 
-#map{
+#map {
   margin-top: 2rem;
 }
-iframe{
+
+iframe {
   width: 100%;
   height: 20rem;
 }
@@ -1341,23 +1347,18 @@ iframe{
   #main_footer #footer-nav .block {
     width: 30%;
   }
-
 }
 
 @media screen and (max-width: 1190px) {
   .block {
     width: 28%;
   }
-
-
-
 }
 
 @media screen and (max-width: 1152px) {
   .shipping_province .form_select select {
     width: 125%;
   }
-
 }
 
 @media screen and (max-width: 1145px) {
@@ -1395,10 +1396,6 @@ iframe{
 
 /* Tablet View */
 @media screen and (max-width: 992px) {
-  /* .mobile_nav {
-    display: block;
-  } */
-
   .content_container {
     margin: 0.3rem;
     width: 95%;
@@ -1528,6 +1525,10 @@ iframe{
 }
 
 @media screen and (max-width: 770px) {
+  .element .box { /* Hover over Image Link in Style Guide */
+    width: 70%;
+  }
+
   .content_container {
     width: 95%;
   }
@@ -1719,6 +1720,28 @@ iframe{
   #lookbook_overview .block {
     width: 90%;
   }
+
+  #combined_elements .mobile-links {
+    width: 80%;
+  }
+
+  #combined_elements .mobile-links #logo-wordmark {
+    margin-left: 0.5rem;
+    width: 75%;
+  }
+
+  .mobile-links #logo-wordmark {
+    margin-left: 1rem;
+  }
+
+  #combined_elements .icon_nav a {
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+  }
+
+  #brand-imagery .block {
+    width: 95%;
+  }
 }
 
 /* Mobile View */
@@ -1833,63 +1856,53 @@ iframe{
     font-size: 0.6rem;
   }
 
-  .brand-imagery img {
-    width: 40%;
-  }
-
-  iframe{
+  iframe {
     width: auto;
     height: auto;
   }
 
 }
 
-
 /* Extra @media setting for journal.html, journal_detail.html, and about.html */
 
 @media screen and (max-width: 1199px) {
-    /* responsive for journal */
-    .items-text {
-      margin-top: 2vw;
-    }
+  /* responsive for journal */
+  .items-text {
+    margin-top: 2vw;
+  }
 
-    .items-text img {
-      margin-top: 5vw;
-    }
+  .items-text img {
+    margin-top: 5vw;
+  }
 
-    #journal{
-      margin-top: 5vw;
-    }
+  #journal{
+    margin-top: 5vw;
+  }
 }
 
 @media screen and (max-width: 1024px) {
-    /* responsive for journal */
-    .items-text h1{
-      left: 20vw;
-    }
+  /* responsive for journal */
+  .items-text h1{
+    left: 20vw;
+  }
 
-    /* responsive for about */
-    #about {
-      margin-top: 0;
-    }
+  /* responsive for about */
+  #about {
+    margin-top: 0;
+  }
 
-    /* responsive for citations*/
-    #citations_title h1{
-      padding-top: 5vw;
-    }
+  /* responsive for citations*/
+  #citations_title h1 {
+    padding-top: 5vw;
+  }
 
-    /* responsive for lookbooks */
-    .dot-item {
-    margin-top: 8vw;
-    }
-
+  /* responsive for lookbooks */
+  .dot-item {
+  margin-top: 8vw;
+  }
 }
 
-@media screen and (max-width: 959px){
-  /* responsive for about */
-
-  /* responsive for journal */
-
+@media screen and (max-width: 959px) {
   .items-text h1 {
     font-size: 15vw;
     left: 20vw;
@@ -1907,20 +1920,23 @@ iframe{
     margin-top: 10vw;
   }
 
-  .article-image-items p{
+  .article-image-items p {
    font-size: .5vw;
   }
 
-  .article-image-items h1{
+  .article-image-items h1 {
     font-size:5vw;
   }
-  .article-image-items h5{
+
+  .article-image-items h5 {
     font-size:1vw;
   }
+
   .ariticle-title {
     padding-right: 0px;
   }
-  #author{
+
+  #author {
     display: none;
   }
 }
@@ -1943,35 +1959,35 @@ iframe{
 }
 
 
-@media screen and (max-width: 414px){
+@media screen and (max-width: 414px) {
   /* responsive for about */
   #about {
-      display: block;
-      margin-top: 0;
+    display: block;
+    margin-top: 0;
   }
 
-  #about-detail p{
+  #about-detail p {
     font-size: 12px;
   }
 
-  #about-img-item img{
+  #about-img-item img {
     width:300px;
     height: 150px;
   }
 
-  .about-header h2{
+  .about-header h2 {
     text-align: center;
   }
 
-  .about-header h4{
+  .about-header h4 {
     text-align: center;
   }
 
-  #about-detail img{
+  #about-detail img {
     margin-top: 1vw;
   }
 
-  ul.icon_lists{
+  ul.icon_lists {
     text-align: center;
   }
 
@@ -1999,7 +2015,7 @@ iframe{
     margin-top: 80px;
   }
 
-  .main_journal{
+  .main_journal {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
@@ -2007,7 +2023,7 @@ iframe{
 
   /* responsive for journal article*/
 
-  #article{
+  #article {
      display: block;
      margin-top: 20vw;
      margin-left: 5vw;
@@ -2019,56 +2035,61 @@ iframe{
     height: 10vh;
   }
 
-  .article-image-items{
+  .article-image-items {
     margin-top: -20vw;
   }
 
-  .article-image-items h1{
+  .article-image-items h1 {
     padding-left: 2vw;
     padding-right: 2vw;
   }
 
-  .article-image-items h5{
+  .article-image-items h5 {
     display: none;
   }
 
   .article-image{
     margin-top: 15vw;
   }
-  .article-image img{
+
+  .article-image img {
     display: inline-block;
     width: 25vw;
     height: 20vw;
     margin-right: 4vw;
   }
 
-  .ariticle-title p{
+  .ariticle-title p {
     margin-top: 10vw;
   }
 
    .ariticle-title {
     margin-bottom: 40vw;
    }
-   #author{
+
+   #author {
      display: none;
    }
 
    /* responsive for citations */
-   #citations_title h1{
+   #citations_title h1 {
      padding-top: 10vw;
    }
 
    /* responsive for lookbooks */
-   .lookbook_name{
+   .lookbook_name {
      font-size: 2vw;
    }
+
    .dot-item {
    margin-top: 14vw;
    }
-   .dot{
+
+   .dot {
      width:2vw;
      height: 2vw;
    }
+
    .numbertext {
     font-size: 1vw;
     padding: 8px 0px;
@@ -2078,27 +2099,22 @@ iframe{
 }
 
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 375px) {
   /* responsive for journal article*/
-  #square{
+  #square {
     margin-top: 20vw;
   }
-  .items-text h1 {
-  }
+
   .article-image img{
     display: none;
   }
 
-  /* responsive for journal */
-  #journal{
-  }
-
-  iframe{
+  iframe {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 320px) {
     /* responsive for journal article*/
   #square {
     margin-top: 40vw;
@@ -2109,7 +2125,7 @@ iframe{
   }
 
   /* responsive for citations */
-  #citations_title h1{
+  #citations_title h1 {
     padding-top: 10vw;
   }
 
@@ -2117,5 +2133,4 @@ iframe{
   .dot-item {
   margin-top: 18vw;
   }
-
 }

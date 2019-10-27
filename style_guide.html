@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/grids.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -21,8 +23,7 @@
         <a href="product-page.html" class="main_nav_item">Products</a>
         <a href="checkout-cart.html" class="main_nav_item">Checkout</a>
         <a href="payment-form.html" class="main_nav_item">Payment</a>
-        <a href="citations.html"
-        class="main_nav_item">Citations</a>
+        <a href="citations.html" class="main_nav_item">Citations</a>
       </nav>
     </header>
 
@@ -51,13 +52,18 @@
 
         <!-- Default Navigation Button -->
           <h3 class="sub_heading">Navigation Link</h3>
-          <a class="main_nav_item" href="#">Default Button</a><br>
+          <nav class="main_nav"><a href="#" class="main_nav_item">Default Button</a></nav>
+          <br>
 
           <h4>CSS selector:</h4>
           <p>.main_nav_item</p>
 
           <h4>Sample code:</h4>
-          <code>&lt;a href="#" class="main_nav_item"&gt;Default Button&lt;/a&gt;</code>
+          <code>
+            &lt;nav class="main_nav"&gt;<br>
+            &nbsp;&lt;a href="#" class="main_nav_item"&gt;Default Button&lt;/a&gt;<br>
+            &lt;/nav&gt;
+          </code>
 
         </section>
 
@@ -89,8 +95,8 @@
           <!-- Text Input Field w/ Label -->
           <h3 class="sub_heading">Text Input Field with Label</h3>
 
-          <label for="input-name" class="text-label">Email Address</label><br>
-          <input type="text" id="input-name">
+          <label for="input-name" class="text-label">Street Address</label><br>
+          <input type="text" id="input-name" class="input-box">
 
           <h4>CSS selector:</h4>
           <p>
@@ -100,8 +106,8 @@
 
           <h4>Sample code:</h4>
           <code>
-            &lt;label for="input-name" class="text-label"&gt;Email Address&lt;/label&gt;<br>
-            &lt;input type="text" id="input-name"&gt;
+            &lt;label for="input-name" class="text-label"&gt;Street Address&lt;/label&gt;<br>
+            &lt;input type="text" id="input-name" class="input-box"&gt;
           </code>
 
         </section>
@@ -149,10 +155,17 @@
 
           <!-- Linked Image (for a Journal Page) -->
           <h3 class="sub_heading">Image as a Link</h3>
-          <div class="image-link-container">
-            <a href="#"><img src="img/saffron-dye.jpg" class="img-link" alt="White spoon holding dried saffron and golden-coloured fabric in the background."></a>
-            <div class="img-hover-box">
-              <div class="img-hover-text">Olderbrother Featured in Bon Appétit</div>
+
+          <div class="box">
+            <div class="box-image">
+              <div class="image-link-container">
+                <a href="journal_detail.html"><img src="img/saffron-dye.jpg" class="img-link" alt="Olderbrother Featured in Bon Appétit"></a>
+                <div class="img-hover-box">
+                  <div class="img-hover-text">
+                    <a href="journal_detail.html">Olderbrother Featured in Bon Appétit</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -166,10 +179,16 @@
 
           <h4>Sample code:</h4>
           <code>
-            &lt;div class="image-link-container"&gt;<br>
-            &nbsp;&lt;a href="#"&gt;&lt;img src="img/saffron_dye.jpg" class="img-link" alt="White spoon holding dried saffron and golden-coloured fabric in the background."&gt;&lt;/a&gt;<br>
-            &nbsp;&lt;div class="img-hover-box"&gt;<br>
-            &nbsp;&nbsp;&lt;div class="img-hover-text"&gt;Olderbrother Featured in Bon Appétit&lt;/div&gt;<br>
+            &lt;div class="box"&gt;<br>
+            &nbsp;&lt;div class="box-image"&gt;<br>
+            &nbsp;&nbsp;&lt;div class="image-link-container"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;a href="journal_detail.html"&gt;&lt;img src="img/saffron-dye.jpg" class="img-link" alt="Olderbrother Featured in Bon Appétit"&gt;&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;div class="img-hover-box"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="img-hover-text"&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="journal_detail.html"&gt;Olderbrother Featured in Bon Appétit&lt;/a&gt;<br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+            &nbsp;&nbsp;&lt;/div&gt;<br>
             &nbsp;&lt;/div&gt;<br>
             &lt;/div&gt;
           </code>
@@ -180,6 +199,70 @@
       </section>
     </div>
     <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+    <!-- COMBINED ELEMENTS SECTION // -->
+    <div class="content_container">
+      <section id="combined_elements">
+        <h2 class="main_heading">Combined Elements</h2>
+
+        <section class="element">
+
+          <h3 class="sub_heading">Main Navigation</h3>
+
+          <div id="global_nav">
+
+            <!-- Desktop Navigation -->
+            <div class="desktop_nav">
+              <nav class="main_nav">
+                <a href="home.html" id="logo-wordmark" class="main_nav_item">
+                  <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
+                </a>
+                <a href="shop.html" class="main_nav_item current_link">Shop</a>
+                <a href="lookbooks.html" class="main_nav_item">Lookbooks</a>
+                <a href="about.html" class="main_nav_item">About</a>
+                <a href="journal.html" class="main_nav_item">Journal</a>
+                <div class="icon_nav">
+                  <a href="checkout_cart.html" class="main_nav_item"><i class="material-icons">shopping_cart</i></a>
+                  <a href="#" class="main_nav_item"><i class="material-icons">search</i></a>
+                </div>
+              </nav>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile_nav">
+              <nav class="main_nav">
+                <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                  <i class="material-icons">menu</i>
+                </a>
+                <div class="mobile-links">
+                  <div class="logo_nav">
+                    <a href="home.html"><img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo" id="logo-wordmark"></a>
+                  </div>
+                  <div class="icon_nav">
+                    <a href="checkout_cart.html"><i class="material-icons">shopping_cart</i></a>
+                    <a href="#"><i class="material-icons">search</i></a>
+                  </div>
+                </div>
+                <div id="dropdown-links">
+                  <a href="shop.html">Shop</a>
+                  <a href="lookbooks.html">Lookbooks</a>
+                  <a href="about.html">About</a>
+                  <a href="journal.html">Journal</a>
+                </div>
+
+              </nav>
+            </div>
+
+          </div>
+
+        </section>
+
+      </section>
+    </div>
+    <!-- // COMBINED ELEMENTS SECTION -->
 
 
 
@@ -337,13 +420,13 @@
 
           <!-- Imagery that represent the Brand -->
           <div class="container">
-            <div class="block brand-imagery">
-              <img src="img/imagery01.jpg">
-              <img src="img/imagery02.jpg">
-              <img src="img/imagery03.jpg">
-              <img src="img/imagery05.jpg">
-              <img src="img/imagery04.jpg">
-              <img src="img/imagery06.jpg">
+            <div id="brand-imagery">
+              <div class="block"><img src="img/imagery01.jpg"></div>
+              <div class="block"><img src="img/imagery02.jpg"></div>
+              <div class="block"><img src="img/imagery03.jpg"></div>
+              <div class="block"><img src="img/imagery05.jpg"></div>
+              <div class="block"><img src="img/imagery04.jpg"></div>
+              <div class="block"><img src="img/imagery06.jpg"></div>
             </div>
           </div>
 
@@ -354,88 +437,6 @@
 
 
 
-    <!-- COMBINED ELEMENTS SECTION // -->
-    <div class="content_container">
-      <section id="combined_elements">
-        <h2 class="main_heading">Combined Elements</h2>
-
-        <section class="element">
-
-          <h3 class="sub_heading">Main Navigation</h3>
-
-          <div id="global_nav">
-
-            <!-- Desktop Navigation -->
-            <div class="desktop_nav">
-              <nav class="main_nav">
-                <a href="home.html" id="logo-wordmark" class="main_nav_item">
-                  <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
-                </a>
-                <a href="shop.html" class="main_nav_item">Shop</a>
-                <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
-                <a href="about.html" class="main_nav_item">About</a>
-                <a href="journal.html" class="main_nav_item">Journal</a>
-              </nav>
-            </div>
-
-            <!-- Mobile Navigation -->
-            <div class="mobile_nav">
-              <nav class="main_nav">
-                <a href="home.html" id="logo-icon" class="main_nav_item">
-                  <img src="img/olderbrother-icon.png" alt="Olderbrother Logo Icon">
-                </a>
-                <a href="shop.html" class="main_nav_item">Shop</a>
-                <a href="#lookbooks" class="main_nav_item">Lookbooks</a>
-                <a href="about.html" class="main_nav_item">About</a>
-                <a href="journal.html" class="main_nav_item">Journal</a>
-              </nav>
-            </div>
-
-          </div>
-
-        </section>
-
-      </section>
-    </div>
-    <!-- // COMBINED ELEMENTS SECTION -->
-
-
-    <div class="content_container">
-      <section id="citations">
-        <h2 class="main_heading">Citations</h2>
-
-        <ul>
-          <li>Adams, V. (n.d.). <strong>Muli [Font].</strong> Retrieved from <a href="https://fonts.google.com/specimen/Muli">fonts.google.com/specimen/Muli</a>.</li>
-          <li>Bologna, J. (2014, September 26). <strong>Flexbox Cheatsheet Cheatsheet [Website Article].</strong> Retrieved from <a href="https://jonibologna.com/blog/flexbox-cheatsheet">jonibologna.com/blog/flexbox-cheatsheet</a>.</li>
-          <li>Bradley, S. (2011, July 14). <strong>6 Methods For Vertical Centering With CSS [Web Article].</strong> Retrieved from <a href="https://vanseodesign.com/css/vertical-centering/">vanseodesign.com/css/vertical-centering/</a>.</li>
-          <li>Bredthauer, M. (2014, June 1). <strong>How to make my logo resize with the browser page [Community Forum].</strong> Retrieved from <a href="https://teamtreehouse.com/community/how-to-make-my-logo-resize-with-the-browser-page">teamtreehouse.com/community/how-to-make-my-logo-resize-with-the-browser-page</a>.</li>
-          <li>Coyier, C. (2018, December 31). <strong>Styling a Select Like It’s 2019 [Web Article].</strong> Retrieved from <a href="https://css-tricks.com/styling-a-select-like-its-2019/">css-tricks.com/styling-a-select-like-its-2019/</a>.</li>
-          <li>
-            Chelsea Burcz(2015, June 25). <strong>OLDERBROTHER: ORGANICS AT PLAY[Digital Image]. </strong> Retrieved from <a href="https://pilgrimsurfsupply.com/blogs/news/82881028-olderbrother-organics-at-play"></a>
-            https://pilgrimsurfsupply.com/blogs/news/82881028-olderbrother-organics-at-play
-          </li>
-          <li>
-            Eden Dawn(2015m, Oct.19). <strong>Bobby Bonaparte on Gender-Neutral Clothing and Keeping Fashion Local[Digital Image]. </strong> Retrieved from <a href="https://www.pdxmonthly.com/articles/2015/10/19/is-gender-neutral-clothing-the-future-of-portland-style"></a>
-            https://www.pdxmonthly.com/articles/2015/10/19/is-gender-neutral-clothing-the-future-of-portland-style
-          </li>
-          <li>LePage, P. (n.d.). <strong>Responsive Web Design Basics [Web Article].</strong> Retrieved from <a href="https://developers.google.com/web/fundamentals/design-and-ux/responsive#set-the-viewport">developers.google.com/web/fundamentals/design-and-ux/responsive#set-the-viewport</a>.</li>
-          <li>Leuenberger, F. (n.d.). <strong>Europa [Font].</strong> Retrieved from <a href="https://fonts.adobe.com/fonts/europa#fonts-section">https://fonts.adobe.com/fonts/europa#fonts-section</a>.</li>
-          <li>Mejia, L. (2016, January 15). <strong>Designing A Product Page Layout with Flexbox.</strong> Retrieved from <a href="https://css-tricks.com/designing-a-product-page-layout-with-flexbox">css-tricks.com/designing-a-product-page-layout-with-flexbox/</a>.</li>
-          <li>Serban, H. (2018). <strong>P01 - Style Guide Template [HTML Template].</strong> Retrieved from <a href="https://canvas.sfu.ca">canvas.sfu.ca</a>.</li>
-          <li>The Noun Project. (n.d.). <strong>Arrow Down [Icon].</strong> Retrieved from <a href="https://thenounproject.com/search/?q=down%20arrow&i=770646">thenounproject.com/search/?q=down%20arrow&i=770646</a>.</li>
-          <li>(2013, April 8). <strong>A Complete Guide to Flexbox [Web Article].</strong> Retrieved from <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">css-tricks.com/snippets/css/a-guide-to-flexbox/</a>.</li>
-          <li>(n.d.). <strong>How TO - Image Hover Overlay [Website Article].</strong> Retrieved from <a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">www.w3schools.com/howto/howto_css_image_overlay.asp</a>.</li>
-          <li>(2015). <strong>CSS / HTML Navigation and Logo on same line [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line">https://stackoverflow.com/questions/30624709/css-html-navigation-and-logo-on-same-line</a>.</li>
-          <li>(2013). <strong>CSS: Left, Center, & Right Align Text on Same Line [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/13694062/css-left-center-right-align-text-on-same-line">stackoverflow.com/questions/13694062/css-left-center-right-align-text-on-same-line</a>.</li>
-          <li>(2010). <strong>How do I change the color of radio buttons? [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons">stackoverflow.com/questions/4253920/how-do-i-change-the-color-of-radio-buttons</a>.</li>
-          <li>(n.d.). <strong>How to change image on hover with CSS [Web Article].</strong> Retrieved from <a href="https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php">www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php</a>.</li>
-          <li>(2011). <strong>Styling Form with Label above Inputs [Community Forum].</strong> Retrieved from <a href="https://stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs">stackoverflow.com/questions/6046110/styling-form-with-label-above-inputs</a>.</li>
-  <br>
-          <li><strong>ALL Olderbrother Images [Digital Image].</strong> Retrieved from <a href="https://olderbrother.us">olderbrother.us</a>.</li>
-        </ul>
-
-      </section>
-    </div>
   	<script src="scripts/main.js"></script>
   </body>
 </html>
