@@ -9,24 +9,30 @@ function myFunction() {
   }
 }
 
-'use strict';
 
-$(".dropdown-nav-target").click(function() {
-  $(".dropdown-filter-nav-content").toggleClass("open");
-});
+var slideIndex = 1;
+showSlides(slideIndex);
 
-// 'use strict';
-//
-// var $toggle = 0;
-//
-// $(document).ready(function() {
-//   $(".dropdown-nav-target").click(function() {
-//   	if ($toggle == 0){
-//       $(".dropdown-filter-nav-content").slideDown("normal");
-//       $toggle = 1;
-//   	} else {
-//   	$(".dropdown-filter-nav-content").slideUp("normal");
-//   	$toggle = 0;
-//   	}
-// 	}
-// }
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
