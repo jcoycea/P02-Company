@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/fonts.css">
     <link rel="stylesheet" type="text/css" href="css/grids.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
@@ -22,114 +24,363 @@
         <a href="product-page.html" class="main_nav_item"><span class="current_link">Products</span></a>
         <a href="checkout-cart.html" class="main_nav_item">Checkout</a>
         <a href="payment-form.html" class="main_nav_item">Payment</a>
+        <a href="citations.html" class="main_nav_item">Citations</a>
       </nav>
 
     </header>
 
     <div class="content_container">
+      <h2 class="main_heading">Multiple Products</h2>
+    </div>
+
+    <nav id="dropdown_product_filters">
+
+      <details class="toggle-product-filter">
+        <summary class="dropdown-nav-target">
+          <h5 class="filter-group-title">Collections</h5>
+          <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+        </summary>
+        <div class="dropdown-filter-nav-content">
+          <a href="#" class="filter-tag">All</a>
+          <a href="#" class="filter-tag">Knits</a>
+          <a href="#" class="filter-tag">Tops</a>
+          <a href="#" class="filter-tag">Bottoms</a>
+          <a href="#" class="filter-tag">Outerwear</a>
+        </div>
+      </details>
+
+      <details class="toggle-product-filter">
+        <summary class="dropdown-nav-target">
+          <h5 class="filter-group-title">Collections</h5>
+          <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+        </summary>
+        <div class="dropdown-filter-nav-content">
+          <a href="#" class="filter-tag">All</a>
+          <a href="#" class="filter-tag">Saffron</a>
+          <a href="#" class="filter-tag">Sky Indigo</a>
+          <a href="#" class="filter-tag">Dark Indigo</a>
+          <a href="#" class="filter-tag">Black Indigo</a>
+          <a href="#" class="filter-tag">Natural</a>
+          <a href="#" class="filter-tag">Tie Dye</a>
+          <a href="#" class="filter-tag">White</a>
+        </div>
+      </details>
+
+      <details class="toggle-product-filter">
+        <summary class="dropdown-nav-target">
+          <h5 class="filter-group-title">Sizes</h5>
+          <i class="material-icons" aria-hidden="true">arrow_drop_down</i>
+        </summary>
+        <div class="dropdown-filter-nav-content">
+          <a href="#" class="filter-tag">All</a>
+          <a href="#" class="filter-tag">XXS</a>
+          <a href="#" class="filter-tag">XS</a>
+          <a href="#" class="filter-tag">S</a>
+          <a href="#" class="filter-tag">M</a>
+          <a href="#" class="filter-tag">L</a>
+          <a href="#" class="filter-tag">XL</a>
+        </div>
+      </details>
+
+    </nav>
+
+    <div class="content_container" id="shop">
+
+        <!-- regular side filters -->
+        <nav id="side_product_filters">
+          <div class="filter-group-content">
+            <h5 class="filter-group-title">Collections</h5>
+            <a href="#" class="filter-tag">All</a>
+            <a href="#" class="filter-tag">Knits</a>
+            <a href="#" class="filter-tag">Tops</a>
+            <a href="#" class="filter-tag">Bottoms</a>
+            <a href="#" class="filter-tag">Outerwear</a>
+          </div>
+
+          <div class="filter-group-content">
+            <h5 class="filter-group-title">Colors</h5>
+            <a href="#" class="filter-tag">All</a>
+            <a href="#" class="filter-tag">Saffron</a>
+            <a href="#" class="filter-tag">Sky Indigo</a>
+            <a href="#" class="filter-tag">Dark Indigo</a>
+            <a href="#" class="filter-tag">Black Indigo</a>
+            <a href="#" class="filter-tag">Natural</a>
+            <a href="#" class="filter-tag">Tie Dye</a>
+            <a href="#" class="filter-tag">White</a>
+          </div>
+
+          <div class="filter-group-content">
+            <h5 class="filter-group-title">Sizes</h5>
+            <a href="#" class="filter-tag">All</a>
+            <a href="#" class="filter-tag">XXS</a>
+            <a href="#" class="filter-tag">XS</a>
+            <a href="#" class="filter-tag">S</a>
+            <a href="#" class="filter-tag">M</a>
+            <a href="#" class="filter-tag">L</a>
+            <a href="#" class="filter-tag">XL</a>
+        </div>
+      </nav>
+
+
 
       <section id="multiple_products">
-        <h2 class="main_heading">Product Listings</h2>
 
-        <h3 class="sub_heading">Multiple Product Listing</h3>
-
-        <div class="content_container">
-
-          <div class="block">
-            <div class="image-link">
-              <a href="#">
-                <img src="img/look-vest-black-indigo.png" alt="Lookbook - Vest">
-                <img class="hover-img" src="img/vest-black-indigo.png" alt="Vest - Black Indigo">
-              </a>
-            </div>
-            <section class="product_quick_info">
-              <h2 class="product_name"><a href="#">Vest</a></h2>
-              <h4>Black Indigo</h4>
-              <p class="price">$230.00</p>
-            </section>
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-classic-shirt-white.png" alt="Lookbook - Classic Shirt">
+              <img class="hover-img" src="img/classic-shirt-white.png" alt="Classic Shirt - White">
+            </a>
           </div>
-
-          <div class="block">
-            <div class="image-link">
-              <a href="#">
-                <img src="img/look-leisure-shirt-white.png" alt="Lookbook - Leisure Shirt">
-                <img class="hover-img" src="img/leisure-shirt-white.png" alt="Vest - Black Indigo">
-              </a>
-            </div>
-            <section class="product_quick_info">
-              <h2 class="product_name"><a href="#">Leisure Shirt</a></h2>
-              <h4>White</h4>
-              <p class="price">$265.00</p>
-            </section>
-          </div>
-
-          <div class="block">
-            <div class="image-link">
-              <a href="#">
-                <img src="img/look-hoodie-sky-indigo.png" alt="Lookbook - Hoodie">
-                <img class="hover-img" src="img/hoodie-sky-indigo.png" alt="Hoodie - Sky Indigo">
-              </a>
-            </div>
-            <section class="product_quick_info">
-              <h2 class="product_name"><a href="#">Hoodie</a></h2>
-              <h4>Sky Indigo</h4>
-              <p class="price">$225.00</p>
-            </section>
-          </div>
-
-          <div class="block">
-            <div class="image-link">
-              <a href="#">
-                <img src="img/look-rugby-shirt-saffron-sky-dark-indigo.png" alt="Lookbook - Rugby Shirt">
-                <img class="hover-img" src="img/rugby-shirt-saffron-sky-dark-indigo.png" alt="Rugby Shirt - Saffron/Sky Indigo/Dark Indigo">
-              </a>
-            </div>
-            <section class="product_quick_info">
-              <h2 class="product_name"><a href="#">Rugby Shirt</a></h2>
-              <h4>Saffron/Sky Indigo/Dark Indigo</h4>
-              <p class="price">$195.00</p>
-            </section>
-          </div>
-
-          <div class="block">
-            <div class="image-link">
-              <a href="#">
-                <img src="img/look-blazer-dark-indigo.png" alt="Lookbook - Blazer">
-                <img class="hover-img" src="img/blazer-dark-indigo.png" alt="Blazer - Dark Indigo">
-              </a>
-            </div>
-            <section class="product_quick_info">
-              <h2 class="product_name"><a href="#">Blazer</a></h2>
-              <h4>Dark Indigo</h4>
-              <p class="price">$495.00</p>
-            </section>
-          </div>
-
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Classic Shirt</a></h3>
+            <h4>White</h4>
+            <p class="price">$225.00</p>
+          </section>
         </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-vest-black-indigo.png" alt="Lookbook - Vest">
+              <img class="hover-img" src="img/vest-black-indigo.png" alt="Vest - Black Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Vest</a></h3>
+            <h4>Black Indigo</h4>
+            <p class="price">$230.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-jeans-sky-indigo.png" alt="Lookbook - Jeans">
+              <img class="hover-img" src="img/jeans-sky-indigo.png" alt="Jeans - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Jeans</a></h3>
+            <h4>Sky Indigo</h4>
+            <p class="price">$230.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-hoodie-sky-indigo.png" alt="Lookbook - Hoodie">
+              <img class="hover-img" src="img/hoodie-sky-indigo.png" alt="Hoodie - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Hoodie</a></h3>
+            <h4>Sky Indigo</h4>
+            <p class="price">$225.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-rugby-shirt-saffron-sky-dark-indigo.png" alt="Lookbook - Rugby Shirt">
+              <img class="hover-img" src="img/rugby-shirt-saffron-sky-dark-indigo.png" alt="Rugby Shirt - Saffron/Sky Indigo/Dark Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h2 class="product_name"><a href="#">Rugby Shirt</a></h2>
+            <h4>Saffron/Sky Indigo/Dark Indigo</h4>
+            <p class="price">$195.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-blazer-dark-indigo.png" alt="Lookbook - Blazer">
+              <img class="hover-img" src="img/blazer-dark-indigo.png" alt="Blazer - Dark Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Blazer</a></h3>
+            <h4>Dark Indigo</h4>
+            <p class="price">$495.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-raglan-crew_tie-dye-sky-indigo.png" alt="Lookbook - Raglan Crew">
+              <img class="hover-img" src="img/raglan-crew_tie-dye-sky-indigo.png" alt="Raglan Crew - Tie Dye Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Raglan Crew</a></h3>
+            <h4>Tie Dye Sky Indigo</h4>
+            <p class="price">$225.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-blazer-white.png" alt="Lookbook - Blazer">
+              <img class="hover-img" src="img/blazer-white.png" alt="Blazer - White">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Blazer</a></h3>
+            <h4>White</h4>
+            <p class="price">$495.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-leisure-shirt-white.png" alt="Lookbook - Leisure Shirt">
+              <img class="hover-img" src="img/leisure-shirt-white.png" alt="Leisure Shirt - White">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Leisure Shirt</a></h3>
+            <h4>White</h4>
+            <p class="price">$265.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-tank-top-sky-indigo.png" alt="Lookbook - Tank Top">
+              <img class="hover-img" src="img/tank-top-sky-indigo.png" alt="Tank Top - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Tank Top</a></h3>
+            <h4>Sky Indigo</h4>
+            <p class="price">$120.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-leisure-shirt-saffron.png" alt="Lookbook - Leisure Shirt">
+              <img class="hover-img" src="img/leisure-shirt-saffron.png" alt="Leisure Shirt - Saffron">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Leisure Shirt</a></h3>
+            <h4>Saffron</h4>
+            <p class="price">$265.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-rugby-shirt-natural-sky-indigo.png" alt="Lookbook - Rugby Shirt">
+              <img class="hover-img" src="img/rugby-shirt-natural-sky-indigo.png" alt="Rugby Shirt - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Rugby Shirt</a></h3>
+            <h4>Natural/Sky Indigo</h4>
+            <p class="price">$195.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-geri-pants-sky-indigo.png" alt="Lookbook - Geri Pants">
+              <img class="hover-img" src="img/geri-pants-sky-indigo.png" alt="Geri Pants - Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Geri Pants</a></h3>
+            <h4>Sky Indigo</h4>
+            <p class="price">$265.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-hoodie-tie-dye-sky-indigo.png" alt="Lookbook - Hoodie">
+              <img class="hover-img" src="img/hoodie-tie-dye-sky-indigo.png" alt="Hoodie - Tie Dye Sky Indigo">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Hoodie</a></h3>
+            <h4>Tie Dye Sky Indigo</h4>
+            <p class="price">$225.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail1.html">
+              <img src="img/look-ob-tee-tie-dye-saffron.png" alt="Lookbook - OB Tee">
+              <img class="hover-img" src="img/ob-tee-tie-dye-saffron.png" alt="OB Tee - Tie Dye Saffron">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">OB Tee</a></h3>
+            <h4>Tie Dye Saffron</h4>
+            <p class="price">$120.00</p>
+          </section>
+        </div>
+
+        <div class="block">
+          <div class="image-link">
+            <a href="product_detail2.html">
+              <img src="img/look-vest-natural.png" alt="Lookbook - Vest">
+              <img class="hover-img" src="img/vest-natural.png" alt="Vest - Natural">
+            </a>
+          </div>
+          <section class="product_quick_info">
+            <h3 class="product_name"><a href="#">Vest</a></h3>
+            <h4>Natural</h4>
+            <p class="price">$230.00</p>
+          </section>
+        </div>
+
       </section>
 
+    </div>
+
+
+    <div class="content_container">
+
+    <h2 class="main_heading">Detailed Products</h2>
+
       <section id="individual_product">
-        <h3 class="sub_heading">Individual Product Listing</h3>
 
         <div class="content_container">
 
             <div class="block">
               <div class="product_image">
-                <img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Raglan Crew - Tie Dye Sky Indigo" width="400px">
+                <img src="img/classic-shirt-white1.png" alt="Raglan Crew - Tie Dye Sky Indigo" width="400px">
               </div>
             </div>
 
             <div class="block">
               <div class="product_details">
-                <h1 class="product_name">Raglan Crew</h1>
-                <h4>Tie Dye Sky Indigo</h4>
+                <h1 class="product_name">Classic Shirt</h1>
+                <h4 class="product_clr">White</h4>
                 <p class="price">$225.00</p>
 
                 <div class="product_options">
                   <div class="size_selector">
                     <label class="text-label">Size</label><br>
                     <select name="size" class="product_select"><br>
+                      <option value="extra-small">XXS</option>
                       <option value="extra-small">XS</option>
+                      <option value="extra-small">S</option>
                       <option value="medium">M</option>
                       <option value="large">L</option>
                       <option value="extra-large">XL</option>
@@ -148,9 +399,9 @@
                   </div>
                 </div>
 
-                <p class="product_desc">Organic Japanese cotton drop shoulder, crewneck sweatshirt. Naturally tie-dyed by hand with indigo. Boxy, relaxed fit.</p>
+                <p class="product_desc">Classic fit button down with half moon details throughout. Fit is true to men's sizing. 100% Japanese organic oxford.</p>
 
-                <a href="#" class="atc-btn">Add to Cart</a>
+                <a href="checkout_cart.html" class="atc-btn">Add to Cart</a>
               </div>
             </div>
 

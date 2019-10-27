@@ -22,91 +22,94 @@
         <a href="product-page.html" class="main_nav_item">Products</a>
         <a href="checkout-cart.html" class="main_nav_item"><span class="current_link">Checkout</span></a>
         <a href="payment-form.html" class="main_nav_item">Payment</a>
+        <a href="citations.html" class="main_nav_item">Citations</a>
       </nav>
 
     </header>
 
     <div class="content_container">
 
+      <h2 class="main_heading">Checkout Cart</h2>
+
       <section id="checkout_cart">
-        <h2 class="main_heading">Checkout</h2>
 
-        <h3 class="sub_heading">Checkout Cart</h3>
+        <table id="view_cart">
+            <thead>
+              <tr>
+                <th scope="col" id="product-table-title" colspan="2">Your Items</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Price</th>
+              </tr>
+            </thead>
 
-        <div class="content_container">
-          <table id="view_cart">
-              <thead>
-                <tr>
-                  <th scope="col" id="product-table-title" colspan="2">Product</th>
-                  <th scope="col" id="quantity-table-title">Quantity</th>
-                  <th scope="col" id="price-table-title">Price</th>
-                </tr>
-              </thead>
+            <tbody>
 
-              <tbody>
+              <tr>
+                <td colspan="2">
 
-                <tr>
-                  <td colspan="2">
-
-                    <div class="checkout_product">
-                      <img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Crewneck - Tie Dye Sky" class="checkout_prod_img">
-                      <div class="checkout_product_info">
-                        <h3 class="checkout_product_name">Raglan Crew</h3>
-                        <h5 class="checkout_product_color">Tie Dye Sky Indigo</h5>
-                        <p class="checkout_size">Size: S</p>
-                      </div>
+                  <div class="checkout_product">
+                    <img src="img/raglan-crew_tie-dye-sky-indigo1.png" alt="Crewneck - Tie Dye Sky" class="checkout_prod_img">
+                    <div class="checkout_product_info">
+                      <h3 class="checkout_product_name">Raglan Crew</h3>
+                      <h5 class="checkout_product_color">Tie Dye Sky Indigo</h5>
+                      <p class="checkout_size">Size: S</p>
                     </div>
+                  </div>
 
-                  </td>
-                  <td class="checkout_quantity">1</td>
-                  <td class="checkout_price">$225.00</td>
-                </tr>
+                </td>
+                <td class="checkout_quantity">1</td>
+                <td class="checkout_price">$225.00</td>
+              </tr>
 
-                <tr>
-                  <td colspan="2">
-                    <div class="checkout_product">
-                      <img src="img/hoodie-saffron.png" alt="Hoodie - Saffron" class="checkout_prod_img">
-                      <div class="checkout_product_info">
-                        <h3 class="checkout_product_name">Hoodie</h3>
-                        <h5 class="checkout_product_color">Saffron</h5>
-                        <p class="checkout_size">Size: M</p>
-                      </div>
+              <tr>
+                <td colspan="2">
+                  <div class="checkout_product">
+                    <img src="img/hoodie-saffron.png" alt="Hoodie - Saffron" class="checkout_prod_img">
+                    <div class="checkout_product_info">
+                      <h3 class="checkout_product_name">Hoodie</h3>
+                      <h5 class="checkout_product_color">Saffron</h5>
+                      <p class="checkout_size">Size: M</p>
                     </div>
-                  </td>
+                  </div>
+                </td>
 
-                  <td class="checkout_quantity">1</td>
-                  <td class="checkout_price">$225.00</td>
-                </tr>
+                <td class="checkout_quantity">1</td>
+                <td class="checkout_price">$225.00</td>
+              </tr>
 
-                <tr>
-                  <td colspan="2">
-                    <div class="checkout_product">
-                      <img src="img/chore-coat-natural.png" alt="Chore Coat - Natural" class="checkout_prod_img">
-                      <div class="checkout_product_info">
-                        <h3 class="checkout_product_name">Chore Coat</h3>
-                        <h5 class="checkout_product_color">Natural</h5>
-                        <p class="checkout_size">Size: M</p>
-                      </div>
+              <tr>
+                <td colspan="2">
+                  <div class="checkout_product">
+                    <img src="img/chore-coat-natural.png" alt="Chore Coat - Natural" class="checkout_prod_img">
+                    <div class="checkout_product_info">
+                      <h3 class="checkout_product_name">Chore Coat</h3>
+                      <h5 class="checkout_product_color">Natural</h5>
+                      <p class="checkout_size">Size: M</p>
                     </div>
-                  </td>
+                  </div>
+                </td>
 
-                  <td class="checkout_quantity">1</td>
-                  <td class="checkout_price">$245.00</td>
-                </tr>
+                <td class="checkout_quantity">1</td>
+                <td class="checkout_price">$245.00</td>
+              </tr>
 
-              </tbody>
+            </tbody>
 
-              <tfoot>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td id="total-title">Total</td>
-                  <td id="total-price">$645.00</td>
-                </tr>
-              </tfoot>
+            <tfoot>
+              <tr>
+                <td></td>
+                <td></td>
+                <td id="total-title">Total</td>
+                <td id="total-price">$645.00</td>
+              </tr>
+            </tfoot>
 
-            </table>
-          </div>
+          </table>
+
+        <div class="pay_form_btns">
+          <a href="shop.html" class="secondary-btn">Keep Shopping</a>
+          <a href="checkout_form.html" class="primary-btn">Proceed to Checkout</a>
+        </div>
 
       </section>
 
