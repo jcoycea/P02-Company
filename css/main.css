@@ -515,7 +515,7 @@ input[type="radio"]:hover:after {
 }
 
 .mySlides {
-  display:none
+  display: none;
 }
 
 .slideshow-container {
@@ -535,7 +535,6 @@ input[type="radio"]:hover:after {
   position: absolute;
   top: 50%;
   width: auto;
-  /* margin-top: -22px; */
   padding: 16px;
   color: #FFB523;
   font-weight: bold;
@@ -545,11 +544,11 @@ input[type="radio"]:hover:after {
 }
 
 .prev {
-  right: 26rem;
+  right: 35vw;
 }
 
 .next {
-  left: 26rem;
+  left: 35vw;
   border-radius: 2px 0 0 2px;
 }
 
@@ -577,7 +576,7 @@ input[type="radio"]:hover:after {
 }
 
 .dot {
-  cursor:pointer;
+  cursor: pointer;
   height: 10px;
   width: 10px;
   margin: 10px 2px;
@@ -1971,22 +1970,33 @@ iframe {
 }
 
 @media screen and (max-width: 768px) {
-    /* responsive for journal */
-    .items-text h1 {
-      margin-top: 25vw;
-    }
+  /* responsive for journal */
+  .items-text h1 {
+    margin-top: 25vw;
+  }
 
-    .box {
-      padding: 20px;
-    }
+  .box {
+    padding: 20px;
+  }
 
-    /* responsive for lookbooks */
-    . {
-    margin-top: 10vw;
-    }
+  /* responsive for lookbooks */
+  .slideshow-container {
+    margin-left: 8rem;
+    margin-right: 8rem;
+  }
 
+  .lookbook_time {
+    margin-top: 1.5rem;
+  }
+
+  .prev {
+    right: 60vw;
+  }
+
+  .next {
+    left: 60vw;
+  }
 }
-
 
 @media screen and (max-width: 414px) {
   /* responsive for about */
@@ -2111,23 +2121,36 @@ iframe {
 
    /* responsive for lookbooks */
    .lookbook_name {
-     font-size: 2vw;
+     font-size: 1rem;
    }
 
-   . {
-   margin-top: 14vw;
+   .lookbook_time {
+     margin-top: 1.5rem;
    }
 
-   .dot {
-     width:2vw;
-     height: 2vw;
+   .slideshow-container {
+     margin-left: 3rem;
+     margin-right: 3rem;
+   }
+
+   .prev {
+     /* right: 18rem; */
+     display: none;
+   }
+
+   .next {
+     /* left: 18rem; */
+     display: none;
    }
 
    .slide-number-text {
-    font-size: 1vw;
-    padding: 8px 0px;
-    top: 20vw;
-    left: 32vw;
+    font-size: 0.8rem;
+  }
+
+  .dot {
+    height: 12px;
+    width: 12px;
+    margin: 20px 10px;
   }
 }
 
@@ -2158,16 +2181,8 @@ iframe {
     padding-top: 10vw;
   }
 
-  /* responsive for lookbooks */
-  .dot-item {
-  margin-top: 18vw;
-  }
-
-  .ariticle-title p{
+  .ariticle-title p {
     font-size: 1rem;
     line-height: 7vw;
   }
-
-
-
 }
