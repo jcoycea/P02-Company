@@ -248,12 +248,32 @@ input[type="text"]:focus {
   color: #FFB523;
 }
 
-.primary-btn {
+.primary-btn, .primary-btn-white  {
   padding: 0.6rem 2rem;
   margin: 0.25rem 0.25rem;
 }
 
 .primary-btn:hover {
+  color: #FFF;
+  background-color: #3A3C4E;
+  border: 1px solid #3A3C4E;
+  transition: 0.5s ease-out;
+}
+
+.primary-btn-white { /* full white button */
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 0.075rem;
+  font-size: 0.6rem;
+  font-family: "Muli", sans-serif;
+  font-weight: bold;
+
+  background-color: #FFF;
+  color: darkgrey;
+}
+
+.primary-btn-white:hover {
   color: #FFF;
   background-color: #3A3C4E;
   border: 1px solid #3A3C4E;
@@ -1046,7 +1066,7 @@ table {
 }
 
 .hero-banner-img {
-  background-image: url(http://www.sfu.ca/~jaquino/homepage-banner1.png);
+  background-image: url(http://www.sfu.ca/~jaquino/homepage-banner1.jpg);
   /* 100vw/vh = 100% of browser width and height */
   width: 100vw;
   height: 90vh;
