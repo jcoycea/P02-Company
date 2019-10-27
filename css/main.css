@@ -535,21 +535,21 @@ input[type="radio"]:hover:after {
   position: absolute;
   top: 50%;
   width: auto;
-  margin-top: -22px;
+  /* margin-top: -22px; */
   padding: 16px;
   color: #FFB523;
   font-weight: bold;
   font-size: 18px;
-  transition: 0.6s ease;
+  transition: 0.5s ease;
   border-radius: 0 3px 3px 0;
 }
 
 .prev {
-    right: 35vw;
+  right: 26rem;
 }
 
 .next {
-  left: 35vw;
+  left: 26rem;
   border-radius: 2px 0 0 2px;
 }
 
@@ -569,32 +569,32 @@ input[type="radio"]:hover:after {
   text-align: center;
 }
 
-.numbertext {
+.slide-number-text {
   color: #3A3C4E;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 22vw;
-}
-
-.dot-item{
-  text-align:center;
-  margin-top: 5vw;
+  font-size: 0.8rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .dot {
   cursor:pointer;
-  height: 13px;
-  width: 13px;
+  height: 10px;
+  width: 10px;
   margin: 10px 2px;
   background-color: #bbb;
   border-radius: 50%;
   display: inline-block;
-  transition: background-color 0.6s ease;
+  transition: background-color 0.5s ease;
+}
+
+.dot-item {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 3rem;
 }
 
 .active, .dot:hover {
-  background-color: #FFB523;
+  background-color: #3A3C4E;
 }
 
 .fade {
@@ -1926,7 +1926,7 @@ iframe {
   }
 
   /* responsive for lookbooks */
-  .dot-item {
+  . {
   margin-top: 8vw;
   }
 }
@@ -1981,7 +1981,7 @@ iframe {
     }
 
     /* responsive for lookbooks */
-    .dot-item {
+    . {
     margin-top: 10vw;
     }
 
@@ -2114,7 +2114,7 @@ iframe {
      font-size: 2vw;
    }
 
-   .dot-item {
+   . {
    margin-top: 14vw;
    }
 
@@ -2123,7 +2123,7 @@ iframe {
      height: 2vw;
    }
 
-   .numbertext {
+   .slide-number-text {
     font-size: 1vw;
     padding: 8px 0px;
     top: 20vw;
