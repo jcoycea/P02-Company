@@ -335,7 +335,7 @@ input[type="radio"]:hover:after {
 }
 
 .img-hover-box {
-  opacity: 0;
+  opacity: 0.5;
   transition: 0.5s ease;
   position: absolute;
   top: 50%;
@@ -1133,6 +1133,10 @@ table {
   font-size: 150%;
 }
 
+.box:hover{
+  margin-top: -2vw;
+}
+
 .image-link-container {
   width:auto;
 }
@@ -1170,6 +1174,8 @@ background: #A9AD9D;
 
 .ariticle-title p {
   margin-top: 100px;
+  font-size: 1.2rem;
+  line-height: 2vw;
 }
 
 .article-image img {
@@ -1271,7 +1277,6 @@ background: #A9AD9D;
   display: grid;
   grid-gap: 40px;
 	grid-template-columns: 30% 65%;
-  margin-top: 5rem;
 }
 
 .about-header h2{
@@ -1868,6 +1873,10 @@ iframe{
       left: 20vw;
     }
 
+    .ariticle-title p {
+    line-height: 3vw;
+    }
+
     /* responsive for about */
     #about {
       margin-top: 0;
@@ -2034,16 +2043,20 @@ iframe{
 
   .article-image{
     margin-top: 15vw;
+    position: relative;
+    left: 25vw;
   }
   .article-image img{
     display: inline-block;
-    width: 25vw;
-    height: 20vw;
+    width: 30vw;
+    height: 25vw;
     margin-right: 4vw;
   }
 
   .ariticle-title p{
     margin-top: 10vw;
+    font-size: 1.1rem;
+    line-height: 6vw;
   }
 
    .ariticle-title {
@@ -2083,11 +2096,6 @@ iframe{
   #square{
     margin-top: 20vw;
   }
-  .items-text h1 {
-  }
-  .article-image img{
-    display: none;
-  }
 
   /* responsive for journal */
   #journal{
@@ -2117,5 +2125,12 @@ iframe{
   .dot-item {
   margin-top: 18vw;
   }
+
+  .ariticle-title p{
+    font-size: 1rem;
+    line-height: 7vw;
+  }
+
+
 
 }
