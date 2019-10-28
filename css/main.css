@@ -384,7 +384,7 @@ input[type="radio"]:hover:after {
   color: #000;
   font-size: 1rem;
   font-weight: bold;
-  padding: 1.2rem 2.5rem;
+  padding: 1rem;
 }
 
 .europa_specimen {
@@ -1509,6 +1509,14 @@ iframe {
 
   #lookbook_overview .block {
     width: 44%;
+  }
+
+  .img-hover-text {
+    background-color: #FFF;
+    color: #000;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 0.6rem;
   }
 }
 
