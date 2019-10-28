@@ -1166,6 +1166,9 @@ table {
 .image-link-container {
   width:auto;
 }
+.img-link video{
+  margin-top: 0;
+}
 
 .box-text h5 {
   margin: 10px 0 0 0;
@@ -1323,7 +1326,6 @@ video {
 }
 
 .about-detail table {
-  width: 50% 50%;
   border-collapse: separate;
   border-spacing: 40px 5px;
 }
@@ -1915,6 +1917,10 @@ iframe {
   #journal{
     margin-top: 5vw;
   }
+
+  .ariticle-title p {
+    line-height: 2.2vw;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -1924,7 +1930,7 @@ iframe {
   }
 
     .ariticle-title p {
-    line-height: 3vw;
+      font-size: 1rem;
     }
 
     /* responsive for about */
@@ -1987,6 +1993,9 @@ iframe {
     padding: 20px;
   }
 
+  .ariticle-title p {
+    line-height: 2.5vw;
+  }
   /* responsive for lookbooks */
   .slideshow-container {
     margin-left: 8rem;
@@ -2005,6 +2014,14 @@ iframe {
     left: 60vw;
   }
 }
+
+@media screen and (max-width: 640px){
+
+  .ariticle-title p {
+    line-height: 3.5vw;
+  }
+}
+
 
 @media screen and (max-width: 414px) {
   /* responsive for about */
