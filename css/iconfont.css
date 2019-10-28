@@ -47,7 +47,6 @@ ul.icon_lists{
   text-align: left;
   cursor: default;
   display: inline-block;
-  padding-inline-start:0px;
 }
 
 .icon_lists li .code-name {

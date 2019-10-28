@@ -22,7 +22,7 @@
         <!-- Desktop Navigation -->
         <div class="desktop_nav">
           <nav class="main_nav">
-            <a href="home.html" id="logo-wordmark" class="main_nav_item">
+            <a href="home.html" class="main_nav_item logo-wordmark">
               <img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo">
             </a>
             <a href="shop.html" class="main_nav_item current_link">Shop</a>
@@ -45,7 +45,7 @@
             </a>
             <div class="mobile-links">
               <div class="logo_nav">
-                <a href="home.html"><img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo" id="logo-wordmark"></a>
+                <a href="home.html"><img src="img/olderbrother-wordmark.png" alt="Olderbrother Logo" class="logo-wordmark"></a>
               </div>
               <div class="icon_nav">
                 <a href="checkout_cart.html"><i class="material-icons">shopping_cart</i></a>
@@ -103,7 +103,7 @@
         <div id="payment_form">
           <div class="block">
 
-            <h4 id="card-info-title">Shipping Address</h4>
+            <h4 class="card-info-title">Shipping Address</h4>
             <div class="shipping_input">
 
               <div class="shipping_name">
@@ -131,7 +131,7 @@
                   <label for="province_option" class="text-label">Province</label><br>
 
                   <div class="form_select">
-                    <select name="province" id="province_option"><br>
+                    <select name="province" id="province_option">
                       <option value="1">British Columbia</option>
                       <option value="2">Alberta</option>
                       <option value="3">Saskatchewan</option>
@@ -165,21 +165,21 @@
             </div>
 
             <div class="seperator-line">
-              <h4 id="card-info-title">Payment Method</h4>
+              <h4 class="card-info-title">Payment Method</h4>
             </div>
 
             <div class="pay_method">
               <div class="method1">
-                <input type="radio" value="radio_btn" name="method">
-                <label for="radio_btn_name">Credit Card</label>
+                <input type="radio" id="radio_btn_cc" name="method">
+                <label for="radio_btn_cc">Credit Card</label>
               </div><br>
               <div class="method2">
-                <input type="radio" value="radio_btn" name="method">
-                <label for="radio_btn_name">Paypal</label>
+                <input type="radio" id="radio_btn_pay" name="method">
+                <label for="radio_btn_pay">Paypal</label>
               </div>
             </div><br>
 
-            <h4 id="card-info-title">Card Information</h4>
+            <h4 class="card-info-title">Card Information</h4>
             <div class="cardholder_name">
               <label for="card_name" class="text-label">Name on Card</label>
               <input type="text" id="card_name" class="input-box">
@@ -199,7 +199,7 @@
               <label for="expiry_month" class="text-label">Expiry Date</label><br>
 
               <div class="form_select">
-                <select name="month" id="expiry_month"><br>
+                <select name="month" id="expiry_month">
                   <option value="jan">January</option>
                   <option value="feb">February</option>
                   <option value="mar">March</option>
@@ -228,8 +228,8 @@
             </div><br>
 
             <div class="save_card">
-              <input type="radio" value="radio_btn">
-              <label for="radio_btn_name">Save card on file</label>
+              <input type="radio" id="radio_btn_save">
+              <label for="radio_btn_save">Save card on file</label>
             </div><br>
 
             <div class="pay_form_btns">

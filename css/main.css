@@ -156,7 +156,7 @@ input[type="text"]:focus {
   float: right;
 }
 
-#logo-wordmark {
+.logo-wordmark {
   width: 100%;
   height: auto;
   max-width: 15rem;
@@ -200,7 +200,7 @@ input[type="text"]:focus {
   padding: 0;
 }
 
-.mobile-links #logo-wordmark {
+.mobile-links .logo-wordmark {
   width: 80%;
   height: auto;
   max-width: 12rem;
@@ -831,7 +831,7 @@ input[type="radio"]:hover:after {
   height: 17rem;
 }
 
-#order-summary-title, #card-info-title {
+#order-summary-title, .card-info-title {
   margin-top: 1rem;
 }
 
@@ -909,7 +909,7 @@ input[type="radio"]:hover:after {
   width: 150%;
 }
 
-#card-info-title {
+.card-info-title {
   margin-bottom: 1rem;
 }
 
@@ -1309,27 +1309,28 @@ background: #A9AD9D;
   text-align: center;
 }
 
-#about-detail {
+.about-detail {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
 video {
   margin-top: 2rem;
+  width: 100%;
 }
 
-#about-detail table {
-  width:50% 50%;
+.about-detail table {
+  width: 50% 50%;
   border-collapse: separate;
   border-spacing: 40px 5px;
 }
 
-#about-detail img {
+.about-detail img {
   width:100%;
   margin-top: 2rem;
 }
 
-#about-detail p {
+.about-detail p {
   margin-top: 2rem;
 }
 
@@ -1345,6 +1346,7 @@ video {
 iframe {
   width: 100%;
   height: 20rem;
+  border: 0;
 }
 
 /***** VIEWPORTS *****/
@@ -1749,12 +1751,12 @@ iframe {
     width: 80%;
   }
 
-  #combined_elements .mobile-links #logo-wordmark {
+  #combined_elements .mobile-links .logo-wordmark {
     margin-left: 0.5rem;
     width: 75%;
   }
 
-  .mobile-links #logo-wordmark {
+  .mobile-links .logo-wordmark {
     margin-left: 1rem;
   }
 
@@ -1923,11 +1925,6 @@ iframe {
   #citations_title h1 {
     padding-top: 5vw;
   }
-
-  /* responsive for lookbooks */
-  . {
-  margin-top: 8vw;
-  }
 }
 
 @media screen and (max-width: 959px) {
@@ -2005,7 +2002,7 @@ iframe {
     margin-top: 0;
   }
 
-  #about-detail p {
+  .about-detail p {
     font-size: 12px;
   }
 
@@ -2022,7 +2019,7 @@ iframe {
     text-align: center;
   }
 
-  #about-detail img {
+  .about-detail img {
     margin-top: 1vw;
   }
 
