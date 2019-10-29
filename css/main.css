@@ -111,7 +111,7 @@ input[type="text"]:focus {
   text-align: left;
 }
 
-.content_container #individual_product, .content_container #checkout_cart, .content_container #payment_order_form {
+.content_container #individual_product, .content_container #payment_order_form {
   width: 100%;
 }
 
@@ -987,6 +987,10 @@ select {
 }
 
 /***** PROCESS - CHECKOUT CART *****/
+
+.content_container #checkout_cart {
+  width: 100%;
+}
 
 #checkout_cart {
   margin-top: 50px; /* top margin to avoid content overlay */
