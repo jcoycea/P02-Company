@@ -1224,6 +1224,7 @@ background: #A9AD9D;
   margin-top: 100px;
   font-size: 1.2rem;
   line-height: 2vw;
+  margin-bottom: 5vw;
 }
 
 .article-image img {
@@ -2083,7 +2084,8 @@ iframe {
     color: #000;
     font-size: 1.6rem;
     text-shadow: none;
-    text-transform: none;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
     padding: 0 18vw;
   }
 
@@ -2106,8 +2108,8 @@ iframe {
   #article {
      display: block;
      margin-top: 20vw;
-     margin-left: 5vw;
-     margin-right: 5vw;
+     margin-left: 8vw;
+     margin-right: 8vw;
    }
 
   #square {
@@ -2131,7 +2133,6 @@ iframe {
   .article-image{
     margin-top: 15vw;
     position: relative;
-    left: 25vw;
   }
 
   .article-image img {
@@ -2215,6 +2216,7 @@ iframe {
 
   .items-text h1 {
     margin: 100px 0 0 0;
+    padding: 0 12vw;
   }
 
   /* responsive for citations */
@@ -2226,4 +2228,5 @@ iframe {
     font-size: 1rem;
     line-height: 7vw;
   }
+
 }
